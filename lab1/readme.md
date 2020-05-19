@@ -15,24 +15,24 @@ int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 
 ```c
 ## Array Elements Insertion (User Input)
-    for(p = 0; p<memory; p++)
+    for(i  =  0 ; i < array_size ; i++)
     {
-        scanf("%d ",&array[p]);
+        scanf("%d ",&array[i]);
     }
 ```
 
 ```c
 ## Print The Array Elements
-    for(i = 0; p<array_size ; p++)
+    for(i = 0; i < array_size ; i++)
     {
-        printf("%d ", array[p]);
+        printf("%d ", array[i]);
     }
 ```
 ```c
 ## Array Reversing
-for(p = array_size-1; p>=0; p--)
+for(i = array_size-1; i>=0 ; i--)
     {
-        printf("%d ", array[p]);
+        printf("%d ", array[i]);
     }
 ```
 
@@ -44,13 +44,13 @@ printf("Overflow"); //The index location is not available.
 
 ```c
 ## End of File
-while(scanf("%d",&array[p]) != EOF)
+while(scanf("%d",&array[i]) != EOF)
     {
-        p++;
+        i++;
     }
     // or
-while(scanf("%d",&array[p]) == 1)
+while(scanf("%d",&array[i]) == 1)
     {
-        p++;
+        i++;
     }
 ```
