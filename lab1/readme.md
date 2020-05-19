@@ -23,14 +23,14 @@ int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 
 ```c
 ## Print The Array Elements
-    for(p = 0; p<memory; p++)
+    for(i = 0; p<array_size ; p++)
     {
         printf("%d ", array[p]);
     }
 ```
 ```c
 ## Array Reversing
-for(p = memory-1; p>=0; p--)
+for(p = array_size-1; p>=0; p--)
     {
         printf("%d ", array[p]);
     }
