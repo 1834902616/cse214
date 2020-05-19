@@ -1,5 +1,6 @@
-```c
+
 ## Array Decleration
+```c
 int array[10];
 double array[10];
 float array[10];
