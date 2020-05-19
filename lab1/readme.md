@@ -42,7 +42,7 @@ if (index_value > index_size)
 printf("Overflow"); //The index location is not available. 
 ```
 
-``c
+```c
 ## End of File
 while(scanf("%d",&array[p]) != EOF)
     {
