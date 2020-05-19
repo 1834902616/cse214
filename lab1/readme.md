@@ -1,10 +1,10 @@
 ```c
 ## Array Decleration
 int array[10];
-int array[]; // Invalid Decleration
 double array[10];
 float array[10];
 char array[10];
+int array[]; // Invalid Decleration
 ```
 
 ```c
@@ -39,7 +39,7 @@ for(i = array_size-1; i>=0 ; i--)
 ```c
 ## Array Access
 if (index_value > index_size)
-printf("Overflow"); //The index location is not available. 
+printf("Overflow"); //The index location is not available when element accessing become out of bound.
 ```
 
 ```c
