@@ -50,6 +50,11 @@ printf("Overflow"); //The index location is not available when element accessing
 
 ## [End of File](../lab1/2.c)
 ```c
+/*To use while loop -
+while(condition) {
+   statement(s);
+} */
+
 while(scanf("%d",&array[i]) != EOF)
     {
         i++;
