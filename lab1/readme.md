@@ -34,8 +34,13 @@ statement ;}*/
     }
 ```
 
-## [Array Reversing](../lab1/7.c)
+## [Reverse Array](../lab1/7.c)
 ```c
+/* Reverse loop -
+for (initialization = array_size - 1 ; condition ; decrement){
+statement;}
+*/ 
+
 for(i = array_size-1; i>=0 ; i--)
     {
         printf("%d ", array[i]);
