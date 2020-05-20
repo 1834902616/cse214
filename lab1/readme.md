@@ -1,10 +1,12 @@
 
-## [Array Decleration](../lab1/6.c)
+## [Variable & Array Decleration](../lab1/6.c)
 ```c
-int array[10];
-double array[10];
-float array[10];
-char array[10];
+int N ; // variable declaration
+int size = 10 ; //variable declaration
+int array[10]; //array declaration [ data type - int]
+double array[10]; //array declaration [ data type - double]
+float array[10];//array declaration [ data type - float]
+char array[10];//array declaration [data type - char]
 int array[]; // Invalid Decleration
 ```
 
