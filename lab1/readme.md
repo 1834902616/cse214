@@ -24,6 +24,10 @@ int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 
 ## [Print The Array Elements](../lab1/5.c)
 ```c
+/* To use for loop- 
+for(initialization ; condion ;  increment){
+statement ;}
+
     for(i = 0; i < array_size ; i++)
     {
         printf("%d ", array[i]);
