@@ -21,7 +21,7 @@ for(i = 0; i < array_size; i++)
         printf("%d ", array[i]);
 ```
 
-## [Insert Value in Array](../lab2/4.c)
+## [Value Insertion in Array](../lab2/4.c)
 ```c
 //Insert Value
 scanf("%d", &X);
@@ -117,14 +117,14 @@ if(count != 1){
 //Insert Value
 scanf("%d",&X);
 
-for( i = 0; i <= array_size; i++){
+for( j = 0; j <= array_size; j++){
         if(X == array[i]){
-            for(j = i; j <= array_size; j++){
-                array[j] = array[j+1];
+            for(i = j; i <= array_size; i++){
+                arrayi] = array[i+1];
             }
             array_size--;
             count++;
-            i--;
+            j--;
         }
     }
     
