@@ -65,7 +65,7 @@ array[K - 1] = X;
 //Insert Value
 scanf("%d", &X);
     
-for (i = 0; i < size; i++){
+for (i = 0; i < array_size; i++){
       if(array[i] == X)
       count++;
     }
@@ -94,26 +94,17 @@ array_size--;
 
 for(j = 0; j < array_size; j++){
         if(X == array[j]){
-            for(i = j; i <= size; i++){
+            for(i = j; i <= array_size; i++){
                 array[i] = array[i+1];
             }
             count++;
             break;
         }
-    }
-
 array_size--;
-
-if(count != 1){
-        printf("Element Not Found");
-    }
-    else{
-        for(i = 0; i < array_size; i++)
-            printf("%d ",array[i]);
-    }
+      
 ```
 
-## [Deleteion of All the Occurrence of The Value](../lab2/11.c)
+## [Deleteion for All the Occurrence of The Value](../lab2/11.c)
 ```c
 //Insert Value
 scanf("%d",&X);
@@ -127,13 +118,5 @@ for( j = 0; j <= array_size; j++){
             count++;
             j--;
         }
-    }
-    
-if(count == 0){
-        printf("Element Not Found");
-    }
-    else{
-        for(i = 0; i < array_size; i++)
-            printf("%d ",array[i]);
-    }
+   
 ```
