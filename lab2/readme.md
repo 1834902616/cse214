@@ -70,7 +70,7 @@ for (i = 0; i < size; i++){
     }
 ```
 
-## [Search a Value in Array and if Found Print -1](../lab2/8.c)
+## [Value Search in Array and Not Found logic](../lab2/8.c)
 ```c
 if(count != 1)
    printf("-1");
@@ -86,7 +86,7 @@ for (i = K-1; i < array_size; i++)
 array_size--;
 ```
 
-## [Only Delete the First Occurrence of The Value](../lab2/10.c)
+## [Deletion of First Occurrence of The Value](../lab2/10.c)
 ```c
 //Insert Value
     scanf("%d",&X);
@@ -112,7 +112,7 @@ if(count != 1){
     }
 ```
 
-## [Delete All the Occurrence of The Value](../lab2/11.c)
+## [Deleteion of All the Occurrence of The Value](../lab2/11.c)
 ```c
 //Insert Value
 scanf("%d",&X);
