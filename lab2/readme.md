@@ -1,4 +1,4 @@
-## [Variable Decleration](../lab2/1.c)
+## [Variable Decleration & initialization](../lab2/1.c)
 ```c
 int i, j;
 int X; // Where X is Value
