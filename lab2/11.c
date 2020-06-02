@@ -1,5 +1,5 @@
-/*Delete a value “X” (take input X from user) from the array shift all other value to left.
-If “X” is not present in the given array print Element Not Found.Delete all the first
+/*Delete a value â€œXâ€ (take input X from user) from the array shift all other value to left.
+If â€œXâ€ is not present in the given array print Element Not Found.Delete all the
 occurrence of the value. And print the whole array */
 
 #include<stdio.h>
