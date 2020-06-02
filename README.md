@@ -5,3 +5,8 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Initialization
 * Array Access
 * Array Input/Output
+
+## Lab Assignment 2
+*
+*
+*
