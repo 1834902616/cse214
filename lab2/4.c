@@ -6,7 +6,7 @@ And print the whole array*/
 int main ()
 {
     int array[100]= {1,2,3,4,5,6,7,8,9,10};
-    int X, i, K, array_size=10;
+    int X, i, K, array_size = 10;
     scanf("%d",&X); //value input
     scanf("%d",&K); //index input
     for( i = 0; i < array_size; i++)
