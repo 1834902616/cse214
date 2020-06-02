@@ -40,10 +40,14 @@ array[K - 1] = X;
 
 ## [Update Index with Another Value ](../lab2/5.c)
 ```c
-    for (i = 0; i == K; i++)
+    for (i = 0; i == K; i++){
         array[i] = array[i - 1];
-
+}
     array[K - 1] = X;
+
+/*Or 
+Array[4] = X //X is value & array_index is defined
+*/
 ```
 
 ## [Update Index with Another Value in a Define Position or Index ](../lab2/6.c)
