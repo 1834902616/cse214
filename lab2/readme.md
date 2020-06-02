@@ -1,9 +1,10 @@
 ## [Variable Decleration & initialization](../lab2/1.c)
 ```c
-int i, j;
-int X; // Where X is Value
-int K; // Where K is Position or Index
-int value; array_size = 10, count = 0;
+int i, j; // variable decleration [Datatype-int]
+int X; // variable declaration [Datatype-int]
+int K; // variable declaration [Datatype-int]
+int value; //variable declaration [Datatype-int]
+int array_size = 10, count = 0; //variable initialization
 ```
 ## [Array Decleration or Initialization](../lab2/2.c)
 ```c
