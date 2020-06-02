@@ -7,7 +7,7 @@ int value; array_size = 10, count = 0;
 ```
 ## [Array Decleration or Initialization](../lab2/2.c)
 ```c
-int array[100] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
+int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 ```
 
 ## [Print The Array Elements](../lab2/3.c)
@@ -45,7 +45,7 @@ array[K - 1] = X;
     array[K - 1] = X;
 ```
 
-## [Update Index with Another Value in a Correct Position or Index ](../lab2/6.c)
+## [Update Index with Another Value in a Define Position or Index ](../lab2/6.c)
 ```c
 //Insert Position
 scanf("%d", &K);
@@ -104,7 +104,7 @@ for(i = 0; i < size; i++){
 array_size--;
 
 if(count != 1){
-        printf("Not Found");
+        printf("Element Not Found");
     }
     else{
         for(i = 0; i < array_size; i++)
@@ -129,7 +129,7 @@ for( i = 0; i <= array_size; i++){
     }
     
 if(count == 0){
-        printf("Not Found");
+        printf("Element Not Found");
     }
     else{
         for(i = 0; i < array_size; i++)
