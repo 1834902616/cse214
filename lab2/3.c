@@ -5,7 +5,7 @@ and shift all other value to right. And print the whole array.*/
 int main ()
 {
     int array[100] = {1,2,3,4,5,6,7,8,9,10};
-    int X, i, position = 3, array_size=10;
+    int X, i, position = 3, array_size = 10;
     scanf("%d",&X); //value input
     for( i = 0; i < array_size; i++)
     {
