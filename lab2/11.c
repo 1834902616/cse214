@@ -1,5 +1,5 @@
-/*Delete a value “X” (take input X from user) from the array shift all other value to left.
-If “X” is not present in the given array print Element Not Found.Delete all the first
+/*Delete a value â€œXâ€ (take input X from user) from the array shift all other value to left.
+If â€œXâ€ is not present in the given array print Element Not Found.Delete all the first
 occurrence of the value. And print the whole array */
 
 #include<stdio.h>
@@ -17,7 +17,7 @@ int main ()
 
     for( j = 0; j <= array_size; j++)
     {
-        if(X==array[j])
+        if(X == array[j])
         {
             for( i = j; i <= array_size; i++)
             {
