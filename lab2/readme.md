@@ -3,7 +3,7 @@
 int i, j;
 int X; // Where X is Value
 int K; // Where K is Position or Index
-int size = 10, tag = 0;
+int array_size = 10, count = 0;
 ```
 ## [Array Decleration or Initialization](../lab2/2.c)
 ```c
@@ -13,7 +13,7 @@ int array[100] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 ## [Print The Array Elements](../lab2/3.c)
 ```c
 /*for ( initialize ; condition; increment ) {
-   printf statement(s);
+   printf(statement);
 }*/
 
 //Implement in Program
@@ -29,20 +29,20 @@ scanf("%d", &X);
 //Insert Position
 scanf("%d", &K);
 
-for (i=size; i>=K; i--)
-        a[i] = a[i - 1];
+for (i = array_size; i >= K; i--)
+        array[i] = array[i - 1];
         
-size++;
+array_size++;
 
-a[K - 1] = X;
+array[K - 1] = X;
 ```
 
 ## [Update Index with Another Value ](../lab2/5.c)
 ```c
-    for (i=0; i==K; i++)
-        a[i] = a[i - 1];
+    for (i = 0; i == K; i++)
+        array[i] = array[i - 1];
 
-    a[K - 1] = X;
+    array[K - 1] = X;
 ```
 
 ## [Update Index with Another Value in a Correct Position or Index ](../lab2/6.c)
@@ -53,10 +53,10 @@ scanf("%d", &K);
 //Insert Value
 scanf("%d", &X);
 
-for (i=0; i==K; i++)
-      a[i] = a[i - 1];
+for (i = 0; i == K; i++)
+      array[i] = array[i - 1];
 
-a[K - 1] = X;
+array[K - 1] = X;
 ```
 
 ## [Search a Value in Array](../lab2/7.c)
@@ -64,15 +64,15 @@ a[K - 1] = X;
 //Insert Value
 scanf("%d", &X);
     
-for (i=0; i<size; i++){
-      if(a[i]==X)
-      tag++;
+for (i = 0; i < size; i++){
+      if(array[i] == X)
+      count++;
     }
 ```
 
 ## [Search a Value in Array and if Found Print -1](../lab2/8.c)
 ```c
-if(tag!=1)
+if(count != 1)
    printf("-1");
 ```
 
@@ -81,9 +81,9 @@ if(tag!=1)
 //Insert Position
 scanf("%d", &K);
 
-for (i=K-1; i<size; i++)
-       a[i] = a[i+1];
-size--;
+for (i = K-1; i < array_size; i++)
+       array[i] = array[i+1];
+array_size--;
 ```
 
 ## [Only Delete the First Occurrence of The Value](../lab2/10.c)
@@ -91,23 +91,23 @@ size--;
 //Insert Value
     scanf("%d",&X);
 
-for(i=0; i<size; i++){
-        if(X==array[i]){
-            for(j=i; j<=size; j++){
+for(i = 0; i < size; i++){
+        if(X == array[i]){
+            for(j = i; j <= size; j++){
                 array[j] = array[j+1];
             }
-            tag++;
+            count++;
             break;
         }
     }
 
-size--;
+array_size--;
 
-if(tag!=1){
+if(count != 1){
         printf("Not Found");
     }
     else{
-        for(i=0; i<size; i++)
+        for(i = 0; i < array_size; i++)
             printf("%d ",array[i]);
     }
 ```
@@ -117,22 +117,22 @@ if(tag!=1){
 //Insert Value
 scanf("%d",&X);
 
-for( i=0; i<=size; i++){
-        if(X==array[i]){
-            for(j=i; j<=size; j++){
+for( i = 0; i <= array_size; i++){
+        if(X == array[i]){
+            for(j = i; j <= array_size; j++){
                 array[j] = array[j+1];
             }
-            size--;
-            tag++;
+            array_size--;
+            count++;
             i--;
         }
     }
     
-if(tag==0){
+if(count == 0){
         printf("Not Found");
     }
     else{
-        for(i=0; i<size; i++)
+        for(i = 0; i < array_size; i++)
             printf("%d ",array[i]);
     }
 ```
