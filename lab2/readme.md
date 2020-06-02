@@ -4,7 +4,7 @@ int i, j; // variable decleration [Datatype-int]
 int X; // variable declaration [Datatype-int]
 int K; // variable declaration [Datatype-int]
 int value; //variable declaration [Datatype-int]
-int array_size = 10, count = 0; //variable initialization
+int array_size = 10, count = 0; //variable initialization [Datatype-int]
 ```
 ## [Array Decleration or Initialization](../lab2/2.c)
 ```c
@@ -73,7 +73,7 @@ for (i = 0; i < array_size; i++){
 
 ## [Value Search in Array and Not Found logic](../lab2/8.c)
 ```c
-if(count != 1)
+if(X != 1) //Here X is the value
    printf("-1");
 ```
 
