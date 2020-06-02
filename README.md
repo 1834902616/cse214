@@ -7,6 +7,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Input/Output
 
 ## Lab Assignment 2
-*
-*
-*
+* 1D Array Insertion
+* 1D Array Update
+* 1D Array Search
+* 1D Array Deletion
