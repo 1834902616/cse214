@@ -92,10 +92,10 @@ array_size--;
 //Insert Value
     scanf("%d",&X);
 
-for(i = 0; i < size; i++){
-        if(X == array[i]){
-            for(j = i; j <= size; j++){
-                array[j] = array[j+1];
+for(j = 0; j < array_size; j++){
+        if(X == array[j]){
+            for(i = j; i <= size; i++){
+                array[i] = array[i+1];
             }
             count++;
             break;
