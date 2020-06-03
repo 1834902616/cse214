@@ -46,11 +46,11 @@ array[K - 1] = X;
     array[K - 1] = X;
 
 /*Or 
-Array[4] = X //X is value & array_index is defined
+Array[4] = X //X is value & array_index is predefined
 */
 ```
 
-## [Update Index with Another Value in a Define Position or Index ](../lab2/6.c)
+## [Update Index with Another Value in any Position or Index ](../lab2/6.c)
 ```c
 //Insert Position
 scanf("%d", &K);
