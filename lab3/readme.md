@@ -54,7 +54,7 @@ for(i = 0; i < array_size; i++)
             min2 = min;
             min = array[i];
         }
-        else if(array[i] < min2 && array[i] != min)
+        else if(array[i] < min2 && array[i] != min){
             min2 = array[i];
     }
 ```
@@ -69,7 +69,7 @@ for(i = 0; i < array_size; i++)
 ```c
 for(i = 0; i < array_size; i++)
         sum += array[i];
-    average = sum/size;
+    average = sum/array_size;
 ```
 
 ## [Calculate Standard Deviation](../lab3/7.c)
@@ -80,7 +80,7 @@ for(i = 0; i < array_size; i++)
 standard_devi = sqrt(standard_devi/array_size);
 ```
 
-## [First 92 Fibonacci Numbers](../lab3/8.c)
+## [Calculate First 92 Fibonacci Numbers](../lab3/8.c)
 ```c
 array[0] = 0; //lets take the series starts with value 0
 array[1] = 1; //lets take the series 2nd value is 1
