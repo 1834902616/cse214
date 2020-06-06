@@ -1,12 +1,12 @@
-## [Array Decleration or Initialization](../lab3/1.c)
+## [Array Decleration & Initialization](../lab3/1.c)
 ```c
-int array[100] = {1,2,3,4,50,6,100,8,9,10};
+int array[100] = {1,2,3,4,50,6,100,8,9,10}; //[Datatype - int]
 ```
-## [Variable Decleration](../lab3/7.c)
+## [Variable Decleration & initialization](../lab3/7.c)
 ```c
-int i, max, min, max2, min2;
-double sum = 0, average = 0, standard_devi = 0;
-int size = 10;
+int i, max, min, max2, min2; // variable declaration [Datatype - int]
+double sum = 0, average = 0, standard_devi = 0; // variable intialization [Datatype - double]
+int size = 10; //variable intialization [Datatype - int]
 ```
 
 ## [Find Maximum](../lab3/1.c)
