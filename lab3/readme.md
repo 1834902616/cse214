@@ -82,9 +82,9 @@ standard_devi = sqrt(standard_devi/array_size);
 
 ## [First 92 Fibonacci Numbers](../lab3/8.c)
 ```c
-array[0] = 0;
-array[1] = 1;
+array[0] = 0; //lets take the series starts with value 0
+array[1] = 1; //lets take the series 2nd value is 1
 
 for(i = 2; i < array_size; i++)
-        array[i] = array[i-1] + array[i-2];
+        array[i] = array[i-1] + array[i-2]; //every first two numbers summation is equal to 3rd number 
 ```
