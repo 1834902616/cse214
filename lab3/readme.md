@@ -39,7 +39,7 @@ for(i = 0; i < array_size; i++)
             max2 = max;
             max = array[i];
         }
-        else if(array[i] > max2 && array[i] < max)
+        else if(array[i] > max2 && array[i] < max) // here, checking max2 is second maximum
             max2 = array[i];
     }
 ```
@@ -54,9 +54,10 @@ for(i = 0; i < array_size; i++)
             min2 = min;
             min = array[i];
         }
-        else if(array[i] < min2 && array[i] != min){
+        else if(array[i] < min2 && array[i] > min) //here, checking min2 is second minimum
+        {
             min2 = array[i];
-    }
+        }
 ```
 
 ## [Summation of Given Array](../lab3/5.c)
