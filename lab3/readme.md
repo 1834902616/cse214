@@ -1,12 +1,12 @@
+## [Array Decleration or Initialization](../lab3/1.c)
+```c
+int array[100] = {1,2,3,4,50,6,100,8,9,10};
+```
 ## [Variable Decleration](../lab3/7.c)
 ```c
 int i, max, min, max2, min2;
 double sum = 0, average = 0, standard_devi = 0;
 int size = 10;
-```
-## [Array Decleration or Initialization](../lab3/1.c)
-```c
-int array[100] = {73, 80, 8, 40, 33, 57, 70, 92, 99, 85};
 ```
 
 ## [Find Maximum](../lab3/1.c)
