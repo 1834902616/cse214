@@ -5,13 +5,13 @@ int array[100] = {1,2,3,4,50,6,100,8,9,10}; //[Datatype - int]
 ## [Variable Decleration & initialization](../lab3/7.c)
 ```c
 int i, max, min, max2, min2; // variable declaration [Datatype - int]
-double sum = 0, average = 0, standard_devi = 0; // variable intialization [Datatype - double]
-int size = 10; //variable intialization [Datatype - int]
+double sum = 0, average = 0, standard_devi = 0; // variable declaration with intialization [Datatype - double]
+int size = 10; //variable declaration with intialization [Datatype - int]
 ```
 
 ## [Find Maximum](../lab3/1.c)
 ```c
-max = array[0];
+max = array[0]; //let's assume one of index[here,array[0] as max
 for(i = 0; i < array_size; i++)
     {
         if(array[i] > max)
@@ -21,7 +21,7 @@ for(i = 0; i < array_size; i++)
 
 ## [Find Minimum](../lab3/2.c)
 ```c
-min = array[0];
+min = array[0]; //let's assume one of index[here,array[0] as min
 for(i = 0; i < size; i++)
     {
         if(array[i] < min)
@@ -31,7 +31,7 @@ for(i = 0; i < size; i++)
 
 ## [Find Second Maximum](../lab3/3.c)
 ```c
-max = array[0];
+max = array[0]; //let's assume one of index[here,array[0] as max
 for(i = 0; i < array_size; i++)
     {
         if(array[i] > max)
@@ -46,7 +46,7 @@ for(i = 0; i < array_size; i++)
 
 ## [Find Second Minimum](../lab3/4.c)
 ```c
-min = array[0];
+min = array[0]; //let's assume one of index[here,array[0] as min
 for(i = 0; i < array_size; i++)
     {
         if(array[i] < min)
