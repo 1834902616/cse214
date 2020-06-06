@@ -11,3 +11,11 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * 1D Array Update
 * 1D Array Search
 * 1D Array Deletion
+
+## Lab Assignment 3
+* Array Maximum
+* Array Minimum
+* Array Summation
+* Array Average
+* Standard Deviation
+* Fibonacci Number
