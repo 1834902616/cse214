@@ -11,7 +11,7 @@ int count = 0, temp = 0; // variable declaration with intialization [Datatype - 
 int array_size = 10; //variable declaration with intialization [Datatype - int]
 ```
 
-## [Copy the given Array](../lab4/1.c)
+## [Copy the Given Array](../lab4/1.c)
 ```c 
  arr[100]; //another array where copying array will be stored
  for(i = 0; i < array_size; i++)
@@ -20,7 +20,7 @@ int array_size = 10; //variable declaration with intialization [Datatype - int]
     }
 ```
 
-## [Reverse Array & Store it in another Array](../lab4/2.c)
+## [Reverse Array & Store it in Another Array](../lab4/2.c)
 ```c
 arr[100] ; //here, reversed array will be stored
 for(i = 0, j = array_size - 1; i <= array_size; i++, j--)
