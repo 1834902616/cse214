@@ -19,3 +19,12 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Average
 * Standard Deviation
 * Fibonacci Number
+
+## Lab Assignment 4
+* Array Copy
+* Array Reverse
+* Array Compare
+* Array Merge
+* Array Split
+* Cyclically Permute
+
