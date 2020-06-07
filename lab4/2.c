@@ -1,3 +1,4 @@
+/*Reverse the given array and store it in another array*/
 
 #include<stdio.h>
 int main ()
