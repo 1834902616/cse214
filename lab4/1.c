@@ -1,3 +1,5 @@
+/*copy the given array into another array*/
+
 #include<stdio.h>
 int main ()
 {
