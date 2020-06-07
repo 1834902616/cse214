@@ -37,35 +37,37 @@ for(i = 0, j = array_size - 1; i <= array_size; i++, j--)
     }
 ```
 
-## [Compare Two Array](../lab4/4.c)
+## [Comparison Between Two Array](../lab4/4.c)
 ```c
 for(i = 0; i < array_size; i++)
     {
-        if(array[i] == arr[i])
+        if(array[i] == arr[i]) //identifying equality between both array
         {
-            count++;
+            count++; //If array elements are equal then count 10(how many times the loop is cycling)
         }
     }
     if(count == array_size)
     {
-        printf("\nBoth arrays are same\n");
+        printf("\nBoth arrays are same\n"); //if equal then print same
     }
     else
     {
-        printf("\nBoth arrays aren't same\n");
+        printf("\nBoth arrays aren't same\n"); // if not equal then print
     }
 
 ```
 
 ## [Merge Two Declared Array into One Array](../lab4/5.c)
 ```c
- for(i = 0; i < size_array; i++)
+a[30]; //Declared 3rd array where merged array will be stored
+size_a = size_array + size_arr; //the merged array size will be equal of two declared array size
+for(i = 0; i < size_array; i++)
     {
-        a[i] = array[i];
+        a[i] = array[i]; //copying first array in 3rd array
     }
     for(i = 0, j = size_array; i < size_arr; i++,j++)
     {
-        a[j] = arr[i];
+        a[j] = arr[i]; //copying second array in 3rd array
     }
 ```
 
@@ -73,17 +75,18 @@ for(i = 0; i < array_size; i++)
 ```c
 for(i = 0; i < size_array; i++)
     {
-        a[i] = array[i];
+        a[i] = array[i]; //copying 1st sorted array in 3rd array
     }
     for(i = 0, j = size_array; i < size_arr; i++,j++)
     {
-        a[j] = arr[i];
+        a[j] = arr[i]; //copying 2nd sorted array in last of 3rd array
     }
 ```
 
-## [Split Array at Specified Position into two Array](../lab4/7.c)
-```c
-for (i = 0; i < K; i++)
+## [Split Array at Specified Position into Two Array](../lab4/7.c)
+```c 
+    
+    for (i = 0; i < K; i++) 
     {
         arr[i] = a[i];
     }
