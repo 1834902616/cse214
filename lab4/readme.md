@@ -12,23 +12,26 @@ int array_size = 10; //variable declaration with intialization [Datatype - int]
 ```
 
 ## [Copy the given Array](../lab4/1.c)
-```c
+```c 
+ arr[100]; //another array where copying array will be stored
  for(i = 0; i < array_size; i++)
     {
-        arr[i] = array[i];
+        arr[i] = array[i]; //copying 1st array into another array
     }
 ```
 
 ## [Reverse Array & Store it in another Array](../lab4/2.c)
 ```c
+arr[100] ; //here, reversed array will be stored
 for(i = 0, j = array_size - 1; i <= array_size; i++, j--)
     {
-        arr[i] = array[j];
+        arr[i] = array[j]; //copying array in reverse order
     }
 ```
 
 ## [Reverse Array within the Same Array](../lab4/3.c)
 ```c
+    temp = 0; //here, temp is the variable to hold the value of array
     for(i = 0, j = array_size - 1; i < array_size/2; i++, j--)
     {
         temp = array[i];
