@@ -76,13 +76,25 @@ for(i = 0; i < size_array; i++)
 
 ## [Merge the Elements of Two Sorted Array](../lab4/6.c)
 ```c
-for(i = 0; i < size_array; i++)
+for(i = 0; i < size_a; i++)
     {
-        a[i] = array[i]; //copying 1st sorted array in 3rd array
+        array[i] = a[i];  //copying 1st sorted array in 3rd array
     }
-    for(i = 0, j = size_array; i < size_arr; i++,j++)
+    for(i = 0, j = size_a; i < size_array; i++,j++)
     {
-        a[j] = arr[i]; //copying 2nd sorted array in last of 3rd array
+        array[j] = arr[i]; //copying 2nd sorted array in last of 3rd 
+    }
+     for(i = 0; i < size_array; i++)
+    {
+        for(j = i + 1; j < size_array; j++)
+        {
+            if(array[i] > array[j]) //Sorting the array after merging
+            {
+                temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
     }
 ```
 
