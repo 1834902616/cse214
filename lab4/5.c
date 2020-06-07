@@ -1,3 +1,5 @@
+/*Declare another array with five[5]values and merge two array into one array*/
+
 #include<stdio.h>
 int main ()
 {
@@ -24,10 +26,6 @@ int main ()
      {
          a[j] = arr[i];
      }
-    /*for(j = 0; j < size_arr; j++)
-    {
-        a[i++] = arr[j];
-    }*/
     for(i = 0; i < size_a; i++)
     {
         printf("%d ",a[i]);
