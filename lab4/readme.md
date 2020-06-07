@@ -85,28 +85,28 @@ for(i = 0; i < size_array; i++)
 
 ## [Split Array at Specified Position into Two Array](../lab4/7.c)
 ```c 
-    
+    scanf("%d",&K); //here, K is the position of the element to split the array
     for (i = 0; i < K; i++) 
     {
-        arr[i] = a[i];
+        arr[i] = a[i]; //copying array elements of before specified position in One array
     }
     for (i = 0; i < K; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d ", arr[i]); //print the first split part array
     }
     printf("\n");
-    for (i = K; i < a_size; i++)
+    for (i = K; i < a_size; i++) 
     {
-        printf("%d ", a[i]);
+        printf("%d ", a[i]); //print the 2nd part of array 
     }
 ```
 
 ## [Cyclically Permute the Elements of Array](../lab4/8.c)
 ```c
-array[array_size] = array[0];
+    array[array_size] = array[0]; //1st array element is the last array element
     for (i = 0; i < array_size; i++)
     {
-        array[i] = array[i+1];
+        array[i] = array[i+1]; //shift left the array elements
     }
 ```
 
