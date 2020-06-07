@@ -99,8 +99,9 @@ for(i = 0; i < size_array; i++)
     }
     printf("\n");
     for (i = K; i < a_size; i++) 
-    {
-        printf("%d ", a[i]); //print the 2nd part of array 
+    {   
+        arr2[i] = a[i]; //copying array elements of after specified position in Another Array
+        printf("%d ", arr2[i]); //print the 2nd part of array 
     }
 ```
 
