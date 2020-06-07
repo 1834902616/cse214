@@ -1,12 +1,14 @@
-## [Array Decleration & Initialization](../lab3/1.c)
+## [Array Decleration & Initialization](../lab4/4.c)
 ```c
-int array[100] = {1,2,3,4,50,6,100,8,9,10}; //[Datatype - int]
+int array[10] = {10,20,30,40,50,60,70,80,90,100}; //array initialization [Datatype - int]
+int a[30], arr[100]; // array decleration [Datatype - int]
+
 ```
-## [Variable Decleration & initialization](../lab3/7.c)
+## [Variable Decleration & initialization](../lab4/3.c)
 ```c
-int i, max, min, max2, min2; // variable declaration [Datatype - int]
-double sum = 0, average = 0, standard_devi = 0; // variable declaration with intialization [Datatype - double]
-int size = 10; //variable declaration with intialization [Datatype - int]
+int i, j, K; // variable declaration [Datatype - int]
+int count = 0, temp = 0; // variable declaration with intialization [Datatype - int]
+int array_size = 10; //variable declaration with intialization [Datatype - int]
 ```
 
 ## [Copy the given Array](../lab4/1.c)
