@@ -151,8 +151,8 @@ for(i = 0; i < array_size; i++)
 ```c
 for(i = 0; i < array_size; i++)
     {
-        temp = *(p+i);
-        *(q+i) = temp;
+        count = *(p+i);
+        *(q+i) = count;
     }
 ```
 
