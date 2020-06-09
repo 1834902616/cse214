@@ -29,5 +29,5 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Cyclically Permute
 
 ## Lab Assignment 5
-*
+* Array Baasic operations Using Pointer
 
