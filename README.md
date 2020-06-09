@@ -1,6 +1,6 @@
 # cse214
 This is a repository for my data structure laboratory course (course code - CSE 214)
-## Lab Assignment 1[../lab1/]
+## [Lab Assignment 1](../lab1/)
 * Array Declaration
 * Array Initialization
 * Array Access
