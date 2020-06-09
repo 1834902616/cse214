@@ -62,7 +62,9 @@ for(i = 0; i < array_size; i++)
 ## [Insert a Value Into the Array Using Pointer](../lab5/5.c)
 ```c
 for (i = array_size; i >= K; i--)
-        *(p+i) = *(p+i-1);
+      {
+      *(p+i) = *(p+i-1);
+      }
 size++;
 *(p+K-1) = X;
 ```
@@ -96,7 +98,9 @@ else
 ## [Delete a Value from the Array Using Pointer](../lab5/8.c)
 ```c
 for (i = K-1; i < array_size; i++)
-       { *(p+i) = *(p+i)+1); }
+       { 
+       *(p+i) = *(p+i)+1); 
+       }
 array_size--;
 ```
 ## [Maximum from the Array Using Pointer](../lab5/9.c)
@@ -110,7 +114,8 @@ for(i = 1; i < array_size; i++)
 ```c
 for(i = 1; i < arrayy_size; i++)
        { if(*(min+i) < *min)
-            *min = *(min+i);}
+            *min = *(min+i);
+            }
 ```
 
 ## [Second Maximum from the Array Using Pointer](../lab5/11.c)
@@ -131,12 +136,12 @@ for(i = 0; i < array_size; i++)
 ```c
 for(i = 0; i < array_size; i++)
     {
-        if(*(min+i)<*min)
+        if(*(min+i) < *min)
         {
             min_2nd = *min;
             *min = *(min+i);
         }
-        else if(*(min+i)<min_2nd && *(min+i)!=*min)
+        else if(*(min+i) < min_2nd && *(min+i) != *min)
            { min_2nd = *(min+i);}
     }
 ```
@@ -160,19 +165,19 @@ for(i = 0; i < array_size; i++)
 ```c
 for(i = 0; i <= array_size; i++)
     {
-        temp = *(p + array_size - i);
-        *(q+i-1) = temp;
+        count = *(p + array_size - i);
+        *(q+i-1) = count;
     }
 ```
 
 ## [Both Array are Same or Not Same Using Pointer](../lab5/16.c)
 ```c
-for(i=0; i<size; i++){
-        if(*(p+i)==*(q+i))
-           { same++;}
+for(i = 0; i < size; i++){
+        if(*(p+i) == *(q+i))
+           { count++;}
            }
 
-if(same==size)
+if(count==size)
       {  printf("\nTwo array are same\n");}
 else
      {   printf("\nTwo array are not same\n");}
@@ -232,7 +237,7 @@ for (i = 0; i < K; i++)
 ## [Cyclically Permute an Array Using Pointer](../lab5/20.c)
 ```c
 *(p + array_size) = *p;
-for (i = 0; i < arra_size; i++)
+for (i = 0; i < array_size; i++)
         *(p+i) = *(p+i+1);
 ```
 
