@@ -212,22 +212,21 @@ for(i = 0; i < array_size; i++)
 
 ## [Split an Array Using Pointer](../lab5/19.c)
 ```c
-*(p + array_size) = *p;
-for (i = 0; i < array_size; i++)
-        *(p+i) = *(p+i+1);
-        for(i=0; i<size; i++)
+for (i = 0; i < K; i++)
     {
-        if(i < K)
-        {
-            *(q+i) = *(p+i);
-            size1++;
-        }
-        else
-        {
-            *(r+j++) = *(p+i);
-            size2++;
-        }
+        *(q+i) = *(p+i);
     }
+    for (i = 0; i < K; i++)
+    {
+        printf("%d ", *(q+i));
+    }
+    printf("\n");
+    for (i = K; i < a_size; i++)
+    {
+        *(r+i) = *(p+i);
+        printf("%d ", *(r+i));
+    }
+
 ```
 
 ## [Cyclically Permute an Array Using Pointer](../lab5/20.c)
