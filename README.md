@@ -28,3 +28,6 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Split
 * Cyclically Permute
 
+## Lab Assignment 5
+*
+
