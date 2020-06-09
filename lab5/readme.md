@@ -1,20 +1,20 @@
-## [Variable Decleration](../lab5/16.c)
+## [Variable Initialization & Decleration](../lab5/16.c)
 ```c
-int count = 0;
-int same = 0;
-int temp = 0;
-int max_2nd, min_2nd;
-int i, j, X, K, index;
-int array_size = 10; // For array[100]
-int array_size1 = 10; // For array1[100]
-int array_size2 = 10; // For array2[100]
+int count = 0, temp = 0; //varable initialization [Datatype - int]
+int max_2nd, min_2nd, i, j, X, K, index; //variable decleration [Datatype - int]
+int array_size = 10; // For array[100] // [Datatype - int]
+int array_size1 = 10; // For array1[100] // [Datatype - int]
+int array_size2 = 10; // For array2[100]// [Datatype - int]
 ```
 
 ## [Array Decleration or Initialization](../lab5/18.c)
 ```c
-int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-int array1[100] = {8, 2, 18, 19, 11, 14, 15, 7, 1, 4};
-int array2[100] = {10, 5, 20, 12, 16, 13, 17, 3, 6, 9};
+int array[100]; // array decleration
+int array1[100]; // array decleration
+int array2[100]; // array decleration
+int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // array initilization [Data type - int]
+int array1[100] = {80, 5, 95, 67, 102, 7, 66, 3, 92, 78}; // array initialization [Data type - int]
+int array2[100] =  {11, 12, 13, 14, 15}; // array initialization [Data type - int ]
 ```
 
 ## [Pointer Decleration or Initialization](../lab5/19.c)
@@ -26,22 +26,22 @@ q = array1;
 r = array2;
 ```
 
-## [Print the Array Using Pointer](../lab5/1.c)
+## [Scan Array Elements Using Pointer (User Input)](../lab5/1.c)
 ```c
 scanf("%d",&N);
 for(i = 0; i < N; i++)
         scanf("%d",(p+i));
 ```
 
-## [Print the Array Using Pointer (Untill EOF)](../lab5/2.c)
+## [Scan values in Array Using Pointer (Until EOF)](../lab5/2.c)
 ```c
 while(scanf("%d",(p+i)) == 1)
 { i++;
   size++;
-        }
+ }
 ```
 
-## [Print the Array Using Pointer (Untill Input 0)](../lab5/3.c)
+## [Scan values in Array Using Pointer (Until Input = 0)](../lab5/3.c)
 ```c
 while(scanf("%d",(p+i)) == 1)
 {
@@ -51,7 +51,7 @@ while(scanf("%d",(p+i)) == 1)
 size = i;
 ```
 
-## [Print the Array Using Pointer (Separated by Space)](../lab5/4.c)
+## [Array Print Using Pointer (Separated by Space)](../lab5/4.c)
 ```c
 for(i = 0; i < array_size; i++)
        { 
@@ -59,17 +59,17 @@ for(i = 0; i < array_size; i++)
        }
 ```
 
-## [Insert a Value Into the Array Using Pointer](../lab5/5.c)
+## [Insert Value Into Array Using Pointer (User Input)](../lab5/5.c)
 ```c
 for (i = array_size; i >= K; i--)
       {
       *(p+i) = *(p+i-1);
       }
-size++;
+array_size++;
 *(p+K-1) = X;
 ```
 
-## [Update a Value from the Array Using Pointer](../lab5/6.c)
+## [Update Value in Array Using Pointer (User Input)](../lab5/6.c)
 ```c
 for(i = K-1; i < array_size; i++)
     {
@@ -78,7 +78,7 @@ for(i = K-1; i < array_size; i++)
     }
 ```
 
-## [Search a Value from The Array Using Pointer](../lab5/7.c)
+## [Search Value & determined the Index in Array Using Pointer(User Input)](../lab5/7.c)
 ```c
 for(i = 0; i < array_size; i++)
     {
@@ -95,7 +95,7 @@ else
        { printf("-1");}
 ```
 
-## [Delete a Value from the Array Using Pointer](../lab5/8.c)
+## [Delete Value from Array & shift left Elements Using Pointer(User Input)](../lab5/8.c)
 ```c
 for (i = K-1; i < array_size; i++)
        { 
@@ -103,14 +103,14 @@ for (i = K-1; i < array_size; i++)
        }
 array_size--;
 ```
-## [Maximum from the Array Using Pointer](../lab5/9.c)
+## [Find Maximum in Array Using Pointer](../lab5/9.c)
 ```c
 for(i = 1; i < array_size; i++)
         if(*(max+i) > *max)
             *max = *(max+i);
 ```
 
-## [Minimum from the Array Using Pointer](../lab5/10.c)
+## [Find Minimum in Array Using Pointer](../lab5/10.c)
 ```c
 for(i = 1; i < arrayy_size; i++)
        { if(*(min+i) < *min)
@@ -118,7 +118,7 @@ for(i = 1; i < arrayy_size; i++)
             }
 ```
 
-## [Second Maximum from the Array Using Pointer](../lab5/11.c)
+## [Find Second Maximum in Array Using Pointer](../lab5/11.c)
 ```c
 for(i = 0; i < array_size; i++)
     {
@@ -132,7 +132,7 @@ for(i = 0; i < array_size; i++)
     }
 ```
 
-## [Second Minimum from the Array Using Pointer](../lab5/12.c)
+## [Find Second Minimum in Array Using Pointer](../lab5/12.c)
 ```c
 for(i = 0; i < array_size; i++)
     {
@@ -161,7 +161,7 @@ for(i = 0; i < array_size; i++)
     }
 ```
 
-## [Reverse an Array Using Pointer](../lab5/15.c)
+## [Reverse Given Array within the same Array Using Pointer](../lab5/15.c)
 ```c
 for(i = 0; i <= array_size; i++)
     {
@@ -170,14 +170,14 @@ for(i = 0; i <= array_size; i++)
     }
 ```
 
-## [Both Array are Same or Not Same Using Pointer](../lab5/16.c)
+## [Determine Both Array are Same or Not Using Pointer](../lab5/16.c)
 ```c
 for(i = 0; i < size; i++){
         if(*(p+i) == *(q+i))
            { count++;}
            }
 
-if(count==size)
+if(count == size)
       {  printf("\nTwo array are same\n");}
 else
      {   printf("\nTwo array are not same\n");}
@@ -215,7 +215,7 @@ for(i = 0; i < array_size; i++)
     }
 ```
 
-## [Split an Array Using Pointer](../lab5/19.c)
+## [Split an Array Using Pointer(User Input)](../lab5/19.c)
 ```c
 for (i = 0; i < K; i++)
     {
