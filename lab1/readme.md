@@ -16,7 +16,7 @@ int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 ```
 
-## [Array N Elements Insertion (User Input)](../lab1/1.c)
+## [Scan N Array Elements (User Input)](../lab1/1.c)
 ```c
     for(i  =  0 ; i < array_size ; i++)
     {
@@ -40,11 +40,13 @@ while(scanf("%d",&array[i]) == 1)
         i++;
     }
 ```
-## [Scan Value in Array (Until Input = 0](../lab1/3.c)
+
+## [Scan Value in Array (Until Input = 0)](../lab1/3.c)
 ```c
 if (index_value > index_size)
 printf("Overflow"); //The index location is not available when element accessing become out of bound.
 ```
+
 ## [Print Array Elements(In newline)](../lab1/4.c)
 ```c
 /* To use for loop- 
@@ -78,7 +80,6 @@ statement ;}*/
         printf("%d ", array[i]);
     }
 ```
-
 ## [Print Array in Reverse Order(Separated by Space)](../lab1/7.c)
 ```c
 /* Reverse loop -
@@ -91,6 +92,3 @@ for(i = array_size-1; i>=0 ; i--)
         printf("%d ", array[i]);
     }
 ```
-
-
-
