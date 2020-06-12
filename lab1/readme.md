@@ -1,5 +1,5 @@
 
-# Variable & Array Decleration Pattern:
+### Variable & Array Decleration Pattern:
 ```c
 int N ; // variable declaration
 int size = 10 ; //variable declaration
@@ -45,7 +45,6 @@ while(scanf("%d",&array[i]) == 1)
 /*if (index_value > index_size)
 printf("Overflow"); //The index location is not available when element accessing become out of bound.
 */
-
     int i = 0;
     while (scanf("%d",&array[i]) == 1)
     {
@@ -93,8 +92,7 @@ statement ;}
 for(initialization ; condion ;  increment){
 statement ;}
 */
-
-     int array[100]= {1,2,3,4,5,6,7,8,9,10}; //array decleration & initialization
+    int array[100]= {1,2,3,4,5,6,7,8,9,10}; //array decleration & initialization
     int i, size = 10; //variable initialization & decleration
     for( i = 0; i<size ; i++)
     {
@@ -108,13 +106,10 @@ statement ;}
 ```
 ## [Print Array in Reverse Order(Separated by Space)](../lab1/7.c)
 ```c
-/* Reverse loop -
+/*Reverse loop -
 for (initialization = array_size - 1 ; condition ; decrement){
 statement;}
 */ 
-    int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int i, j, size = 10;
-
 for(i = array_size - 1; i >= 0 ; i--)
     {
         printf("%d ", array[i]);
