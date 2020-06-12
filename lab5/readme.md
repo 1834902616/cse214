@@ -1,23 +1,4 @@
-## [Variable Initialization & Decleration](../lab5/16.c)
-```c
-int count = 0, temp = 0; //varable initialization [Datatype - int]
-int max_2nd, min_2nd, i, j, X, K, index; //variable decleration [Datatype - int]
-int array_size = 10; // For array[100] // [Datatype - int]
-int array_size1 = 10; // For array1[100] // [Datatype - int]
-int array_size2 = 10; // For array2[100]// [Datatype - int]
-```
-
-## [Array Decleration or Initialization](../lab5/18.c)
-```c
-int array[100]; // array decleration
-int array1[100]; // array decleration
-int array2[100]; // array decleration
-int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // array initilization [Data type - int]
-int array1[100] = {80, 5, 95, 67, 102, 7, 66, 3, 92, 78}; // array initialization [Data type - int]
-int array2[100] =  {11, 12, 13, 14, 15}; // array initialization [Data type - int ]
-```
-
-## [Pointer Decleration or Initialization](../lab5/19.c)
+### Pointer Decleration or Initialization Basic Pattern:
 ```c
 int *p, *q, *r; //pointer decleration [Data type - int]
 int *max, *min; //pointer decleration [Data type - int]
