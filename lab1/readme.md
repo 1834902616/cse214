@@ -1,8 +1,8 @@
 
-### Variable & Array Decleration Pattern:
+### Variable & Array Decleration Basic Pattern:
 ```c
-int N ; // variable declaration
-int size = 10 ; //variable declaration
+int N ; // variable declaration [data type - int]
+int size = 10 ; //variable declaration & initialization [data type - int]
 int array[10]; //array declaration [ data type - int]
 double array[10]; //array declaration [ data type - double]
 float array[10];//array declaration [ data type - float]
@@ -48,7 +48,6 @@ printf("Overflow"); //The index location is not available when element accessing
     int i = 0;
     while (scanf("%d",&array[i]) == 1)
     {
-
         if(array[i] == 0)
         {
             break;
