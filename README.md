@@ -6,13 +6,13 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Access
 * Array Input/Output
 
-## Lab Assignment 2
+## [Lab Assignment 2](lab2)
 * 1D Array Insertion
 * 1D Array Update
 * 1D Array Search
 * 1D Array Deletion
 
-## Lab Assignment 3
+## [Lab Assignment 3](lab3)
 * Array Maximum
 * Array Minimum
 * Array Summation
@@ -20,7 +20,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Standard Deviation
 * Fibonacci Number
 
-## Lab Assignment 4
+## [Lab Assignment 4](lab4)
 * Array Copy
 * Array Reverse
 * Array Compare
@@ -28,7 +28,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Split
 * Cyclically Permute
 
-## Lab Assignment 5
+## Lab Assignment 5(lab5)
 * Array Basic operations Using Pointer:
 
 (Decleration, Initialization, I/O - EOF, Insert, Update, Search, Delete, Maximum-Minimum,
