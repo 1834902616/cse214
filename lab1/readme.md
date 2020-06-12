@@ -16,14 +16,14 @@ int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 ```
 
-## [Array Elements Insertion (User Input)](../lab1/1.c)
+## [Array N Elements Insertion (User Input)](../lab1/1.c)
 ```c
     for(i  =  0 ; i < array_size ; i++)
     {
         scanf("%d ",&array[i]);
     }
 ```
-## [End of File](../lab1/2.c)
+## [Insert Elements Until End of File(User Input)](../lab1/2.c)
 ```c
 /*To use while loop -
 while(condition) {
@@ -40,7 +40,7 @@ while(scanf("%d",&array[i]) == 1)
         i++;
     }
 ```
-## [Array Access](../lab1/3.c)
+## [Element Insertion until User Input is 0](../lab1/3.c)
 ```c
 if (index_value > index_size)
 printf("Overflow"); //The index location is not available when element accessing become out of bound.
