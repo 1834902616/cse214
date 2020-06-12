@@ -23,7 +23,28 @@ int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
         scanf("%d ",&array[i]);
     }
 ```
+## [End of File](../lab1/2.c)
+```c
+/*To use while loop -
+while(condition) {
+   statement(s);
+} */
 
+while(scanf("%d",&array[i]) != EOF)
+    {
+        i++;
+    }
+    // or
+while(scanf("%d",&array[i]) == 1)
+    {
+        i++;
+    }
+```
+## [Array Access](../lab1/3.c)
+```c
+if (index_value > index_size)
+printf("Overflow"); //The index location is not available when element accessing become out of bound.
+```
 ## [Print The Array Elements](../lab1/5.c)
 ```c
 /* To use for loop- 
@@ -49,26 +70,5 @@ for(i = array_size-1; i>=0 ; i--)
     }
 ```
 
-## [Array Access](../lab1/3.c)
-```c
-if (index_value > index_size)
-printf("Overflow"); //The index location is not available when element accessing become out of bound.
-```
 
-## [End of File](../lab1/2.c)
-```c
-/*To use while loop -
-while(condition) {
-   statement(s);
-} */
 
-while(scanf("%d",&array[i]) != EOF)
-    {
-        i++;
-    }
-    // or
-while(scanf("%d",&array[i]) == 1)
-    {
-        i++;
-    }
-```
