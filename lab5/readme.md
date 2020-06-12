@@ -2,13 +2,14 @@
 ```c
 int *p, *q, *r; //pointer decleration [Data type - int]
 int *max, *min; //pointer decleration [Data type - int]
+
 p = array; //pointer initialization
 q = array1; //pointer initialization
 r = array2; //pointer initialization
 
-/* other method of pointer declare & initialization:
+//other method of pointer declare & initialization:
 p = &array;
-p = &array[0];*/
+p = &array[0];
 ```
 
 ## [Scan Array Elements Using Pointer (User Input)](../lab5/1.c)
