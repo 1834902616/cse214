@@ -1,28 +1,38 @@
-## [Variable Decleration & initialization](../lab2/1.c)
+## [Value Insertion in Array at Determined Index](../lab2/1.c)
 ```c
-int i, j; // variable decleration [Datatype-int]
-int X; // variable declaration [Datatype-int]
-int K; // variable declaration [Datatype-int]
-int value; //variable declaration [Datatype-int]
-int array_size = 10, count = 0; //variable initialization [Datatype-int]
+int array[100] = {1,2,3,4,5,6,7,8,9,10} ;
+    int value = 5, array_size = 10;
+    for (int i = 0 ; i < array_size ; i++)
+    {
+        printf("%d ",array[i]);
+    }
+    printf("\n");
+    array[9] = value;
 ```
-## [Array Decleration or Initialization](../lab2/2.c)
+## [Value Insertion At the End of Currently Stored Elements](../lab2/2.c)
 ```c
-int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-```
-
-## [Print The Array Elements](../lab2/3.c)
+    scanf("%d",&X); //value input
+    for( i = 0; i < array_size; i++)
+    {
+        printf("%d ",array[i]);
+    }
+    printf("\n");
+    array[10] = X;
+    array_size++;
+  ```
+## [Value Insert at Defined Index & Shift Right(User Input)](../lab2/3.c)
 ```c
-/*for ( initialization ; condition; increment/decrement ) {
-   printf(statement);
-}*/
-
-//Implement in Program
-for(i = 0; i < array_size; i++)
-        printf("%d ", array[i]);
+    int array[100] = {1,2,3,4,5,6,7,8,9,10};
+    int X, i, position = 3, array_size = 10;
+    scanf("%d",&X); //value input
+    array_size++;
+    for( i = array_size - 1; i >= position - 1; i--)
+    {
+        array[i+1] = array[i];
+    }
+    array[position-1] = X;
 ```
-
-## [Value Insertion in Array](../lab2/4.c)
+## [Value Insert at Kth Index Shift Right(User input)](../lab2/4.c)
 ```c
 //Insert Value
 scanf("%d", &X);
@@ -38,7 +48,7 @@ array_size++;
 array[K - 1] = X;
 ```
 
-## [Update Index with Another Value ](../lab2/5.c)
+## [Update Defined Index with Another Value](../lab2/5.c)
 ```c
     for (i = 0; i == K; i++){
         array[i] = array[i - 1];
