@@ -23,7 +23,7 @@ int array[] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
         scanf("%d ",&array[i]);
     }
 ```
-## [Insert Elements Until End of File(User Input)](../lab1/2.c)
+## [Scan Values in Array(Until End of File)](../lab1/2.c)
 ```c
 /*To use while loop -
 while(condition) {
@@ -40,7 +40,7 @@ while(scanf("%d",&array[i]) == 1)
         i++;
     }
 ```
-## [Element Insertion until User Input is 0](../lab1/3.c)
+## [Scan Value in Array (Until Input = 0](../lab1/3.c)
 ```c
 if (index_value > index_size)
 printf("Overflow"); //The index location is not available when element accessing become out of bound.
