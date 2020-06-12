@@ -34,21 +34,23 @@ This is a repository for my data structure laboratory course (course code - CSE 
   - Initialization
   - Accessing
   - I/O
-    - End Of File
-    - User Input is 0
-  - Insert
-  - Update
-  - Search
-  - Delete
+    - Until End Of File
+    - Until User Input is 0
+  - Element Insert
+  - Element Update
+  - Element Search
+  - Element Delete
   - Maximum
-    - 2nd Maximum
+    - Find 2nd Maximum
   - Minimum
-    - 2nd Minimum
-  - Summation
-  - Copy
-  - Reverse 
-  - Compare
-  - Merge 
-  - Split
+    - Find 2nd Minimum
+  - Array Summation
+  - Array Copy
+  - Array Reverse 
+  - Compare 
+  - Array Merge
+      - Two Array in One Array
+      - Two sorted Array
+  - Array Split
   - Cyclically permute
 
