@@ -1,6 +1,7 @@
 
 ## [Find Maximum](../lab3/1.c)
 ```c
+int i, max ; //variable decleration [data type - int]
 max = array[0]; //let's assume one of index[here,array[0] as max
 for(i = 0; i < array_size; i++)
     {
@@ -11,6 +12,7 @@ for(i = 0; i < array_size; i++)
 
 ## [Find Minimum](../lab3/2.c)
 ```c
+int i, min; //variable decleration[data type - int]
 min = array[0]; //let's assume one of index[here,array[0] as min
 for(i = 0; i < size; i++)
     {
@@ -52,12 +54,15 @@ for(i = 0; i < array_size; i++)
 
 ## [Summation of Given Array](../lab3/5.c)
 ```c
+int sum = 0,  i; //variable decleration & initialization [data type - int]
 for(i = 0; i < array_size; i++)
         sum += array[i];
 ```
 
 ## [Average of Given Array](../lab3/6.c)
 ```c
+int i, sum = 0, array_size = 10; //variable decleration & initialization[data type - int]
+double average = 0; //variable decleration & initialization[data type - double]
 for(i = 0; i < array_size; i++)
         sum += array[i];
     average = sum/array_size;
@@ -65,12 +70,13 @@ for(i = 0; i < array_size; i++)
 
 ## [Calculate Standard Deviation](../lab3/7.c)
 ```c
+int i, array_size = 10; //variable decleration & initialization[data type - int]
+double sum = 0, standard_devi = 0, average = 0; //variable decleration & initialization[data type - double]
 for(i = 0; i < array_size; i++)
         standard_devi += pow(array[i]-average,2);
 
 standard_devi = sqrt(standard_devi/array_size);
 ```
-
 ## [Calculate First 92 Fibonacci Numbers](../lab3/8.c)
 ```c
 array[0] = 0; //lets take the series starts with value 0
