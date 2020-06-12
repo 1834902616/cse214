@@ -1,15 +1,3 @@
-## [Array Decleration & Initialization](../lab4/4.c)
-```c
-int array[10] = {10,20,30,40,50,60,70,80,90,100}; //array initialization [Datatype - int]
-int a[30], arr[100]; // array decleration [Datatype - int]
-
-```
-## [Variable Decleration & initialization](../lab4/3.c)
-```c
-int i, j, K; // variable declaration [Datatype - int]
-int count = 0, temp = 0; // variable declaration with intialization [Datatype - int]
-int array_size = 10; //variable declaration with intialization [Datatype - int]
-```
 
 ## [Copy the Given Array](../lab4/1.c)
 ```c 
