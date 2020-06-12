@@ -28,9 +28,12 @@ This is a repository for my data structure laboratory course (course code - CSE 
 * Array Split
 * Cyclically Permute
 
-## Lab Assignment 5(lab5)
+## [Lab Assignment 5](lab5)
 * Array Basic operations Using Pointer:
+ 
 
-(Decleration, Initialization, I/O - EOF, Insert, Update, Search, Delete, Maximum-Minimum,
+ -Decleration,
+
+Initialization, I/O - EOF, Insert, Update, Search, Delete, Maximum-Minimum,
 2nd Maximum-Minimum, Summation, Copy, Reverse, Compare, Merge, Split, Cyclically permute)
 
