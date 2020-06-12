@@ -1,5 +1,5 @@
 
-## Variable & Array Decleration
+# Variable & Array Decleration Pattern:
 ```c
 int N ; // variable declaration
 int size = 10 ; //variable declaration
@@ -11,7 +11,7 @@ int array[]; // Invalid Decleration
 ```
 ## [Scan N Array Elements (User Input)](../lab1/1.c)
 ```c
-       int array[100]; //array declaration [ data type - int]
+    int array[100]; //array declaration [ data type - int]
     int i, N;  // variable declaration [data type - int]
     scanf("%d",&N); //here, N is the number of array elements
     if( N <= 100)
