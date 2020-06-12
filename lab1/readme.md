@@ -45,7 +45,29 @@ while(scanf("%d",&array[i]) == 1)
 if (index_value > index_size)
 printf("Overflow"); //The index location is not available when element accessing become out of bound.
 ```
-## [Print The Array Elements](../lab1/5.c)
+## [Print Array Elements(In newline)](../lab1/4.c)
+```c
+/* To use for loop- 
+for(initialization ; condion ;  increment){
+statement ;}*/
+
+    for(i = 0; i < array_size ; i++)
+    {
+        printf("%d ", array[i]);
+    }
+```
+## [Print Array Elements(Separated by Space)](../lab1/5.c)
+```c
+/* To use for loop- 
+for(initialization ; condion ;  increment){
+statement ;}*/
+
+    for(i = 0; i < array_size ; i++)
+    {
+        printf("%d ", array[i]);
+    }
+```
+## [Print Array Elements(Separated by Comma)](../lab1/6.c)
 ```c
 /* To use for loop- 
 for(initialization ; condion ;  increment){
@@ -57,7 +79,7 @@ statement ;}*/
     }
 ```
 
-## [Reverse Array](../lab1/7.c)
+## [Print Array in Reverse Order(Separated by Space)](../lab1/7.c)
 ```c
 /* Reverse loop -
 for (initialization = array_size - 1 ; condition ; decrement){
