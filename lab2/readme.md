@@ -1,13 +1,14 @@
-## [Value Insertion in Array at Determined Index](../lab2/1.c)
+## [Value Insertion in Array at Defined Index](../lab2/1.c)
 ```c
-int array[100] = {1,2,3,4,5,6,7,8,9,10} ;
-    int value = 5, array_size = 10;
+    int array[100] = {1,2,3,4,5,6,7,8,9,10} ; //array decleration & initialization[Data type - int]
+    int array_size = 10; //variable decleration & initialization
+    int value = 5; //defined value which will be inserted in array
     for (int i = 0 ; i < array_size ; i++)
     {
         printf("%d ",array[i]);
     }
     printf("\n");
-    array[9] = value;
+    array[9] = value; //
 ```
 ## [Value Insertion At the End of Currently Stored Elements](../lab2/2.c)
 ```c
@@ -17,13 +18,14 @@ int array[100] = {1,2,3,4,5,6,7,8,9,10} ;
         printf("%d ",array[i]);
     }
     printf("\n");
-    array[10] = X;
-    array_size++;
+    array[10] = X; //value assign at the end of currently stored elements
+    array_size++; //size increased 
   ```
 ## [Value Insert at Defined Index & Shift Right(User Input)](../lab2/3.c)
 ```c
-    int array[100] = {1,2,3,4,5,6,7,8,9,10};
-    int X, i, position = 3, array_size = 10;
+    int array[100] = {1,2,3,4,5,6,7,8,9,10}; //array decleration & initialization [data type - int]
+    int X, i, array_size = 10; //variable declertion & initiaization [data type -int]
+    int position = 3; //defined index
     scanf("%d",&X); //value input
     array_size++;
     for( i = array_size - 1; i >= position - 1; i--)
