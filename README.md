@@ -34,7 +34,8 @@ This is a repository for my data structure laboratory course (course code - CSE 
   - Initialization
   - Accessing
   - I/O
-    - EOF
+    - End Of File
+    - User Input is 0
   - Insert
   - Update
   - Search
