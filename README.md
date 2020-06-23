@@ -55,5 +55,5 @@ This is a repository for my data structure laboratory course (course code - CSE 
   - Cyclically permute
   
 ##[Lab Assignment 6](lab6)
-*Linked List Basic Operations[Single Way(Singly)Linked list]
-  *Linked list Create
+  *Linked List Basic Operations[Single Way(Singly)Linked list]
+    *Linked list Create
