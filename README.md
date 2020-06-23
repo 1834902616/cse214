@@ -53,5 +53,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
       - Two sorted Array
   - Array Split
   - Cyclically permute
+  
 ##[Lab Assignment 6](lab6)
-*Linked List Basic Operations[Single Way (Singly)Linked list]
+*Linked List Basic Operations[Single Way(Singly)Linked list]
+  *Linked list Create
