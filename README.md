@@ -57,7 +57,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
 ## [Lab Assignment 6](lab6)
   * Linked List Basic Operations[Single Way(Singly)Linked list]
       * Linked list Create
-      * Linked list Decleraation
+      * Linked list Decleration
       * Linked list Initialization
       * Linked list Access
       * Linked list Traverse
