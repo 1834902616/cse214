@@ -55,11 +55,22 @@ This is a repository for my data structure laboratory course (course code - CSE 
   - Cyclically permute
   
 ## [Lab Assignment 6](lab6)
-  * Linked List Basic Operations[Single Way(Singly)Linked list]:
+  * Linked List Basic Operations [Single Way(Singly)Linked list]:
       * Linked list Create
       * Linked list Decleration
       * Linked list Initialization
       * Linked list Access
       * Linked list Traverse
       * Linked list Output
+      
+## [Lab Assignment 7](lab7)
+  * Linked List Basic Operations [Single Way(Singly)Linked list]:
+      * Linked list Create
+      * Empty
+      * Size
+      * Front
+      * Back
+      * Search
+      * Reverse
+      * Merge 
       
