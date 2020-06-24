@@ -53,7 +53,7 @@ void display_complete_linkedlist(node *temp)
     printf("\n");
 }
 ```
-## [Using DMA to create Linked List, Print Linked List & Check Empty List(In newline)](../lab6/4.c)
+## [Using DMA to create Linked List, Print Linked List & Check Empty List](../lab6/4.c)
 ```c
 
 void display_complete_linkedlist(node *temp)
