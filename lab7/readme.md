@@ -190,7 +190,7 @@ node *merge_list(node *list1, node *list2)
     return head;
 }
 ```
-## [Define a Function to Merge Two Sorted Linked List into A Sorrted linked List](../lab7/12.c)
+## [Define a Function to Merge Two Sorted Linked List into A Sorted linked List](../lab7/12.c)
 ```c
 
 node *merge_list(node *list1, node *list2)
