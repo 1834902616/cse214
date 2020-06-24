@@ -72,7 +72,7 @@ void display_complete_linkedlist(node *temp)
 }
 
 ```
-## [Define Reecursive function to display complete Linked List(Only Value Of Each Node)](../lab6/5.c)
+## [Define Recursive function to display complete Linked List(Only Value Of Each Node)](../lab6/5.c)
 ```c
 void display_complete_linkedlist(node *temp)
 {
