@@ -1,7 +1,29 @@
 
 
+
 ## [Decleration & Initialization of Linked List](../lab6/1.c)
 ```c
+// Structure Create Basic Pattern:
+/* struct_keyword Structure_Name {
+    variable_dataType Variable_Name;
+};
+
+// Structure  Declaration
+// struct Structure_Name Variable_Name;
+
+// Variable_Name.Member_Name = Value
+//p.value = 10;
+
+// First Node_variable put into a pointer for accessing
+ // head = &p;
+ 
+ // First Node_variable put into a pointer for accessing
+  head = &p;
+  
+ // any_Variable = next_ Variable_address
+  p.next = &q;
+  ... ... ...
+ 
    struct Node
 {
     int value;
