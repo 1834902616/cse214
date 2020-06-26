@@ -1,11 +1,11 @@
 ## [Delete Back and Check Underflow](../lab8/1.c)
 ```c
-Node* delete_back(Node *temp)
+node* delete_back(node *temp)
 {
-    Node *head = temp, *last;
+    node *head = temp, *last;
     if(temp)
     {
-        if (head->next!=NULL)
+        if (head->next != NULL)
         {
             while(temp->next)
             {
@@ -24,19 +24,21 @@ Node* delete_back(Node *temp)
     }
     else
         printf("Underflow Linked List");
+    return temp;
     return head;
 }
 ```
 
 ## [Delete Front and Check Underflow](../lab8/2.c)
 ```c
-Node* delete_front(Node *temp)
+node* delete_front(node *temp)
 {
-    if(temp){
-        Node *new_head = NULL;
-    new_head = temp->next;
-    free(temp);
-    return new_head;
+    if(temp)
+    {
+        node *new_head = NULL;
+        new_head = temp->next;
+        free(temp);
+        return new_head;
     }
     else
         printf("Underflow Linked List");
@@ -82,30 +84,30 @@ Node* delete_value(Node *temp, int key)
 
 ## [Delete At (Check Underflow and index out of range)](../lab8/4.c)
 ```c
-Node* delete_at(Node *temp, int pos)
+node* delete_at(node *temp, int pos)
 {
     while(temp)
     {
-        if(pos>4 || pos<1)
+        if(pos > 4 || pos < 1)
         {
             printf("Index out of range");
             return NULL;
         }
         else
         {
-            if(pos==1)
+            if(pos == 1)
             {
-                Node *new_head = NULL;
+                node *new_head = NULL;
                 new_head = temp->next;
                 free(temp);
                 return new_head;
             }
             else
             {
-                Node *head = temp;
-                Node *prev, *next;
-                int i=1;
-                while(i<pos)
+                node *head = temp;
+                node *prev, *next;
+                int i = 1;
+                while(i < pos)
                 {
                     prev = temp;
                     temp = temp->next;
@@ -124,15 +126,15 @@ Node* delete_at(Node *temp, int pos)
 
 ## [Delete All / Clear Linked List](../lab8/5.c)
 ```c
-Node* clear(Node *temp)
+node* clear(node *temp)
 {
-    Node *to_delete;
+    node *clear;
     while(temp)
-        {
-            to_delete = temp;
-            temp = temp->next;
-            free(to_delete);
-        }
+    {
+        clear = temp;
+        temp = temp->next;
+        free(clear);
+    }
     return NULL;
 }
 ```
