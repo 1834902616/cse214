@@ -73,4 +73,18 @@ This is a repository for my data structure laboratory course (course code - CSE 
       * Search
       * Reverse
       * Merge 
+
+## [Lab Assignment 8](lab8)
+* Delete Back
+* Delete Front
+* Delete Value
+* Delete At
+* Delete All/Clear
+
+## [Lab Assignment 9](lab9)
+* Insert Front
+* Insert Back
+* Insert At
+* Insert Before
+* Insert After
       
