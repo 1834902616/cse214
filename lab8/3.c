@@ -1,24 +1,23 @@
-/*Implement a “Delete Value” function to delete a value (key) from the Linked List.
-Take input the delete ‘key’ from user. (Check Underflow and Not Found) */
+/*  Implement a â€œDelete Valueâ€ function to delete a value (key) from the Linked List.
+    Take input the delete â€˜keyâ€™ from user. (Check Underflow and Not Found) */
 
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct Node node;
-struct Node
+typedef struct node
 {
     int value;
-    node *next;
-};
+    struct node *next;
+}Node;
 
-node* create_list();
-void print_list(node *temp);
-node* delete_value(node *temp, int key);
+Node* create_list();
+void print_list(Node *temp);
+Node* delete_value(Node *temp, int key);
 
 int main()
 {
     int key;
-    node *head = NULL;
+    Node *head = NULL;
 
     scanf("%d",&key);
 
@@ -30,12 +29,43 @@ int main()
 
     printf("\n");
 }
+Node* create_list()
+{
+    Node *a, *b, *c, *d;
 
-node* delete_value(node *temp, int key)
+    a = (Node *) malloc(sizeof(Node));
+    b = (Node *) malloc(sizeof(Node));
+    c = (Node *) malloc(sizeof(Node));
+    d = (Node *) malloc(sizeof(Node));
+
+    a->value = 10;
+    a->next = b;
+
+    b->value = 20;
+    b->next = c;
+
+    c->value = 30;
+    c->next = d;
+
+    d->value = 40;
+    d->next = NULL;
+
+    return a;
+}
+
+void print_list(Node *temp){
+    while(temp!=NULL){
+        printf("%d ",temp->value);
+        temp = temp->next;
+    }
+    printf("\n");
+}
+
+Node* delete_value(Node *temp, int key)
 {
     if (temp)
     {
-        node *head = temp, *prev;
+        Node *head = temp, *prev;
         while(temp)
         {
             if(temp->value == key)
@@ -62,38 +92,4 @@ node* delete_value(node *temp, int key)
     else
         printf("Underflow Linked List\n");
     return temp;
-}
-
-node* create_list()
-{
-    node *a, *b, *c, *d;
-
-    a = (node *) malloc(sizeof(node));
-    b = (node *) malloc(sizeof(node));
-    c = (node *) malloc(sizeof(node));
-    d = (node *) malloc(sizeof(node));
-
-    a->value = 30;
-    a->next = b;
-
-    b->value = 50;
-    b->next = c;
-
-    c->value = 70;
-    c->next = d;
-
-    d->value = 90;
-    d->next = NULL;
-
-    return a;
-}
-
-void print_list(node *temp)
-{
-    while(temp != NULL)
-    {
-        printf("%d ",temp->value);
-        temp = temp->next;
-    }
-    printf("\n");
 }
