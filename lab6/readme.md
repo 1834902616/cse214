@@ -1,18 +1,26 @@
-
-
-
-## [Decleration & Initialization of Linked List](../lab6/1.c)
+### Define, Create, Initialization & Decleration Basic patterns[For Structure & LinkedList]:
 ```c
-// Structure Create Basic Pattern:
-/* struct_keyword Structure_Name {
-    variable_dataType Variable_Name;
+//Structure Definition:
+struct Structure_Name {
+    dataType Variable_Name;
+    dataType Variable_Name;
+    ...       ...
 };
 
-// Structure  Declaration
-// struct Structure_Name Variable_Name;
+// Structure  Declaration:
+struct Structure_Name Variable_Name;
 
-// Variable_Name.Member_Name = Value
-//p.value = 10;
+//Structure Value Assign:
+Variable_Name.Member_Name = Value;
+
+//Structure Output Pattern:
+printf("%d %d\n", p.x, p.y);
+
+//Typedef Apply:
+typedef struct Structure_Name New_DataType_Name;
+```
+## [Decleration & Initialization of Linked List](../lab6/1.c)
+```c
 
 // First Node_variable put into a pointer for accessing
  // head = &p;
