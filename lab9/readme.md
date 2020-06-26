@@ -1,9 +1,9 @@
 ## [Insert Front in Linked List](../lab9/1.c)
 ```c
-Node* insert_front(Node *temp, int key)
+node* insert_front(node *temp, int key)
 {
-    Node *new_head;
-    new_head = (Node*) malloc(sizeof(Node) );
+    node *new_head;
+    new_head = (node*) malloc(sizeof(node) );
     new_head->value = key;
     new_head->next = temp;
     return new_head;
@@ -12,21 +12,20 @@ Node* insert_front(Node *temp, int key)
 
 ## [Insert Back in Linked List](../lab9/2.c)
 ```c
-Node* insert_back(Node *temp, int key)
+node* insert_back(node *temp, int key)
 {
-    if (temp==NULL)
+    if (temp == NULL)
     {
-        Node *new_head;
-        new_head = (Node*) malloc(sizeof (Node) );
+        node *new_head;
+        new_head = (node*) malloc(sizeof (node) );
         new_head->value = key;
         new_head->next = NULL;
         return new_head;
     }
-    Node *head = temp, *new_node;
+    node *head = temp, *new_node;
     while(temp->next)
         temp = temp->next;
-
-    new_node = (Node*) malloc(sizeof (Node) );
+    new_node = (node*) malloc(sizeof (node) );
     new_node->value = key;
     new_node->next = NULL;
     temp->next = new_node;
@@ -36,18 +35,18 @@ Node* insert_back(Node *temp, int key)
 
 ## [Insert at And Check Index out Of Range](../lab9/3.c)
 ```c
-Node* insert_at(Node *temp, int pos, int value)
+node* insert_at(node *temp, int pos, int value)
 {
-    Node *head = temp, *prev, *new_node;
-    int i = 2;
-    if(pos<1 || pos>4)
+    node *head = temp, *prev, *new_node;
+    int i = 0;
+    if(pos < 1 || pos > 4)
     {
         printf("Index out of range\n");
         return temp;
     }
     if(pos == 1)
     {
-        new_node = (Node*) malloc(sizeof(Node) );
+        new_node = (node*) malloc(sizeof(node) );
         new_node->value = value;
         new_node->next = temp;
         return new_node;
@@ -57,7 +56,7 @@ Node* insert_at(Node *temp, int pos, int value)
         prev = temp;
         if(i == pos)
         {
-            new_node = (Node*) malloc(sizeof(Node)) ;
+            new_node = (node*) malloc(sizeof(node)) ;
             new_node->value = value;
             new_node->next = temp->next;
             prev->next = new_node;
@@ -73,15 +72,15 @@ Node* insert_at(Node *temp, int pos, int value)
 
 ## [Insert After and Check Index out Of Range](../lab9/4.c)
 ```c
-Node* insert_after(Node *temp, int key, int value)
+node* insert_after(node *temp, int key, int value)
 {
-    Node *head = temp;
+    node *head = temp;
     int i = 0;
     while(temp)
     {
         if(temp->value == key)
         {
-            Node *new_node = (Node*) malloc(sizeof (Node) );
+            node *new_node = (node*) malloc(sizeof (node) );
             new_node->value = value;
             new_node->next = temp->next;
             temp->next = new_node;
@@ -95,15 +94,13 @@ Node* insert_after(Node *temp, int key, int value)
         printf("Index out of range\n");
         printf("Element Not Found\n");
     }
-    return head;
-}
-```
+    else
+        printf("Element Not Found\n");
 
-## [Insert Before and Check Index out Of Range](../lab9/5.c)
-```c
-Node* insert_before(Node *temp, int key, int value)
+    return head;
+}node* insert_before(node *temp, int key, int value)
 {
-    Node *prev, *head = temp;
+    node *prev, *head = temp;
     int i = 0;
     int j = 0;
     while(temp)
@@ -112,7 +109,7 @@ Node* insert_before(Node *temp, int key, int value)
         {
             if(temp == head)
             {
-                Node *new_node = (Node*) malloc(sizeof(Node*)) ;
+                node *new_node = (node*) malloc(sizeof(node*)) ;
                 new_node->value = value;
                 new_node->next = temp;
                 i++;
@@ -120,7 +117,7 @@ Node* insert_before(Node *temp, int key, int value)
             }
             else
             {
-                Node *new_node = (Node*) malloc(sizeof(Node*));
+                node *new_node = (node*) malloc(sizeof(node*));
                 new_node->value = value;
                 new_node->next = temp;
                 prev->next = new_node;
@@ -131,11 +128,56 @@ Node* insert_before(Node *temp, int key, int value)
         prev = temp;
         temp = temp->next;
     }
-    if(i<1 || i>4 || j<1 || j>4)
+    if(i < 1 || i > 4 || j < 1 || j > 4)
     {
         printf("Index out of range\n");
         printf("Element Not Found\n");
     }
+    else
+        printf("Element Not Found\n");
+    return head;
+}
+```
+
+## [Insert Before and Check Index out Of Range](../lab9/5.c)
+```c
+node* insert_before(node *temp, int key, int value)
+{
+    node *prev, *head = temp;
+    int i = 0;
+    int j = 0;
+    while(temp)
+    {
+        if(temp->value == key)
+        {
+            if(temp == head)
+            {
+                node *new_node = (node*) malloc(sizeof(node*)) ;
+                new_node->value = value;
+                new_node->next = temp;
+                i++;
+                return new_node;
+            }
+            else
+            {
+                node *new_node = (node*) malloc(sizeof(node*));
+                new_node->value = value;
+                new_node->next = temp;
+                prev->next = new_node;
+                j++;
+                return head;
+            }
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    if(i < 1 || i > 4 || j < 1 || j > 4)
+    {
+        printf("Index out of range\n");
+        printf("Element Not Found\n");
+    }
+    else
+        printf("Element Not Found\n");
     return head;
 }
 ```
