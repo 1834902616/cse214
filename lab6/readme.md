@@ -21,38 +21,27 @@ typedef struct Structure_Name New_DataType_Name;
 ```
 ## [Decleration & Initialization of Linked List](../lab6/1.c)
 ```c
-
-// First Node_variable put into a pointer for accessing
- // head = &p;
- 
- // First Node_variable put into a pointer for accessing
-  head = &p;
-  
- // any_Variable = next_ Variable_address
-  p.next = &q;
-  ... ... ...
- 
-   struct Node
+   struct Node   // a node named structure create
 {
-    int value;
-    struct Node *next;
+    int value;   //value declare
+    struct Node *next;  //next node address declare
 };
 
 int main()
 {
-    struct Node a, b, c;
-    struct Node* head, *temp;
+    struct node a, b, c;   //structure decleration
+    struct node* head, *temp; 
 
-    head = &a;
+    head = &a; /// hold First Node_address into a pointer named head for accessing
 
-    a.value = 1;
-    a.next = &b;
+    a.value = 1;  ///value assign in node
+    a.next = &b;  ///next node address assign 
 
-    b.value = 2;
-    b.next = &c;
+    b.value = 2;  ///value assign in node
+    b.next = &c;  ///next node address assign 
 
-    c.value = 3;
-    c.next = NULL;
+    c.value = 3;  ///value assign in node
+    c.next = NULL;  ///last node is defined if next address is assigned with NULL.
 
     temp = head;
     while(temp != NULL)
