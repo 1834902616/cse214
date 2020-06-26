@@ -48,11 +48,11 @@ node* delete_front(node *temp)
 
 ## [Delete Value (Check Underflow and Not Found)](../lab8/3.c)
 ```c
-Node* delete_value(Node *temp, int key)
+node* delete_value(node *temp, int key)
 {
     if (temp)
     {
-        Node *head = temp, *prev;
+        node *head = temp, *prev;
         while(temp)
         {
             if(temp->value == key)
