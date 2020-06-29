@@ -6,7 +6,7 @@ max = array[0]; //let's assume one of index[here,array[0] as max
 for(i = 0; i < array_size; i++)
     {
         if(array[i] > max)
-            max = array[i];
+            {max = array[i];}
     }
 ```
 
@@ -17,7 +17,7 @@ min = array[0]; //let's assume one of index[here,array[0] as min
 for(i = 0; i < size; i++)
     {
         if(array[i] < min)
-            min = array[i];
+            {min = array[i];}
     }
 ```
 
@@ -32,7 +32,7 @@ for(i = 0; i < array_size; i++)
             max = array[i];
         }
         else if(array[i] > max2 && array[i] < max) // here, checking max2 is second maximum
-            max2 = array[i];
+           { max2 = array[i];}
     }
 ```
 
@@ -56,7 +56,7 @@ for(i = 0; i < array_size; i++)
 ```c
 int sum = 0,  i; //variable decleration & initialization [data type - int]
 for(i = 0; i < array_size; i++)
-        sum += array[i];
+        {sum += array[i];}
 ```
 
 ## [Average of Given Array](../lab3/6.c)
@@ -64,7 +64,8 @@ for(i = 0; i < array_size; i++)
 int i, sum = 0, array_size = 10; //variable decleration & initialization[data type - int]
 double average = 0; //variable decleration & initialization[data type - double]
 for(i = 0; i < array_size; i++)
-        sum += array[i];
+        {sum += array[i];
+        }
     average = sum/array_size;
 ```
 
@@ -73,7 +74,7 @@ for(i = 0; i < array_size; i++)
 int i, array_size = 10; //variable decleration & initialization[data type - int]
 double sum = 0, standard_devi = 0, average = 0; //variable decleration & initialization[data type - double]
 for(i = 0; i < array_size; i++)
-        standard_devi += pow(array[i]-average,2);
+       { standard_devi += pow(array[i]-average,2);}
 
 standard_devi = sqrt(standard_devi/array_size);
 ```
@@ -83,5 +84,6 @@ array[0] = 0; //lets take the series starts with value 0
 array[1] = 1; //lets take the series 2nd value is 1
 
 for(i = 2; i < array_size; i++)
-        array[i] = array[i-1] + array[i-2]; //every first two numbers summation is equal to 3rd number 
+       { array[i] = array[i-1] + array[i-2]; 
+       } //every first two numbers summation is equal to 3rd number 
 ```
