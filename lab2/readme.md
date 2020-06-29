@@ -128,7 +128,7 @@ scanf("%d",&X);
 for( j = 0; j <= array_size; j++){
         if(X == array[i]){
             for(i = j; i <= array_size; i++){
-                arrayi] = array[i+1];
+                array[i] = array[i+1];
             }
             array_size--;
             count++;
