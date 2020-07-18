@@ -135,6 +135,15 @@ int top()
     else
     {
         return 0;
-    }
+    } 
+    front_element = top();
+    if (front_element != 0)
+            {
+                printf(" Top element : %d", front_element);
+            }
+            else
+            {
+                printf("\n No Top element in Queue as Queue is Empty");
+            }
 }
 ```
