@@ -1,4 +1,4 @@
-## [Decler](../lab6/1.c)
+## [Implementation of Queue Data Structure](../lab10/1.c)
 ```c
 typedef struct Node node;
    struct Node   // a node named structure create
@@ -8,7 +8,7 @@ typedef struct Node node;
 };
 ```
 
-```c 
+```c
 node *front,*back,*temp,*first;
 int count = 0;
 
@@ -33,7 +33,7 @@ void empty()
         printf("\n Queue is not empty");
     }
 }
-'''
+```
 
 ```c
 /* Function to Return Queue Size */
@@ -87,7 +87,7 @@ void display_queue()
         printf(" %d", first->value);
     }
 }
-'''
+```
 
 ```c
 /* Function to Delete Value from the Queue */
