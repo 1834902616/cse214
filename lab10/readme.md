@@ -1,4 +1,5 @@
 ## [Implementation of Queue Data Structure](../lab10/1.c)
+## Structure For A Queue:
 ```c
 typedef struct Node node;
    struct Node   // a node named structure create
@@ -7,7 +8,7 @@ typedef struct Node node;
     struct Node *next;  //next node address declare
 };
 ```
-
+## Used pointers & variables For Queue:
 ```c
 node *front,*back,*temp,*first;
 int count = 0;
