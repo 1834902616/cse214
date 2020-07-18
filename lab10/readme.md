@@ -14,12 +14,13 @@ int count = 0;
 
 int value, option, front_element;
 ```
-
+## Create An Empty Queue:
 ```c
 /* Create an empty queue */
    front = back = NULL;
 ```
 
+## Check Queue is Empty Or Not:
 ```c
 /* Function to Display if the Queue is Empty or Not */
 void empty()
@@ -34,7 +35,7 @@ void empty()
     }
 }
 ```
-
+## Finding Queue Size:
 ```c
 /* Function to Return Queue Size */
 void queue_size()
@@ -43,6 +44,7 @@ void queue_size()
 }
 ```
 
+## Push Or Elements Insertion in Queue:
 ```c
 /* Function to Insert or Push Elements in the Queue */
 void push(int data)
@@ -66,6 +68,7 @@ void push(int data)
 }
 ```
 
+## Display or Print Queue Elements:
 ```c
 /* Function to Display the Queue Elements */
 void display_queue()
@@ -89,6 +92,7 @@ void display_queue()
 }
 ```
 
+## Pop Or Element Deletion in Queue:
 ```c
 /* Function to Delete Value from the Queue */
 void pop()
@@ -123,6 +127,7 @@ void pop()
 }
 ```
 
+## Find Top Element of Queue:
 ```c
 /* Function to Return the First or Top Element of Queue */
 int top()
