@@ -26,7 +26,7 @@ int value, option, front_element;
 /* Function to Display if the Queue is Empty or Not */
 void empty()
 {
-    if ((front == NULL) && (back == NULL))
+    if ((front == NULL) && (back == NULL)) //If both first & last element of queue is equal to Null.
     {
         printf("\n Queue is empty");
     }
@@ -50,7 +50,7 @@ void queue_size()
 /* Function to Insert or Push Elements in the Queue */
 void push(int data)
 {
-    if (back == NULL)
+    if (back == NULL) 
     {
         back = (node*)malloc(sizeof(node));
         back->next = NULL;
@@ -74,19 +74,19 @@ void push(int data)
 /* Function to Display the Queue Elements */
 void display_queue()
 {
-    first = front;
+    first = front; //hold the front value in a  variable named first
 
-    if ((first == NULL) && (back == NULL))
+    if ((first == NULL) && (back == NULL)) //if there is no element in Queue
     {
         printf("\n Queue is empty ");
         return;
     }
-    while (first != back)
+    while (first != back) //If there is morre than one element in queue
     {
         printf(" %d ", first->value);
         first = first->next;
     }
-    if (first == back)
+    if (first == back) // if there is one element only in queue
     {
         printf(" %d", first->value);
     }
@@ -98,14 +98,14 @@ void display_queue()
 /* Function to Delete Value from the Queue */
 void pop()
 {
-    first = front;
+    first = front; //hold the front value in a  variable named first
 
-    if (first == NULL)
+    if (first == NULL) //if there is no element in Queue
     {
         printf("\n No Elements Left, Empty Queue");
         return;
     }
-    else if (first->next != NULL)
+    else if (first->next != NULL) //if there is more than one element in Queue
     {
         first = first->next;
         printf("\n Deleted value : %d", front->value);
