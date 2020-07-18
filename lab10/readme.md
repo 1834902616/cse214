@@ -1,4 +1,4 @@
-## [Implementation of Queue Data Structure](../lab10/1.c)
+## [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
 ## Structure For A Queue:
 ```c
 typedef struct Node node;
