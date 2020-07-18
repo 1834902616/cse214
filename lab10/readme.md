@@ -119,12 +119,7 @@ void pop()
         front = NULL;
         back = NULL;
     }
-
     count--;
-
-    getchar();
-    printf("\n\n Press 'Enter' to Continue the program...\n");
-    getchar();
 }
 ```
 
@@ -141,9 +136,5 @@ int top()
     {
         return 0;
     }
-
-    getchar();
-    printf("\n\n Press 'Enter' to Continue the program...\n");
-    getchar();
 }
 ```
