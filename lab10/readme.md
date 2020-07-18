@@ -1,122 +1,26 @@
-
+## [Decler](../lab6/1.c)
+```c
 typedef struct Node node;
-struct Node
+   struct Node   // a node named structure create
 {
-    int value;
-    node *next;
+    int value;   //value declare
+    struct Node *next;  //next node address declare
 };
+```
 
+```c 
 node *front,*back,*temp,*first;
-
-void push(int data);
-void pop();
-int top();
-void empty();
-void display_queue();
-void queue_size();
-
 int count = 0;
 
-void main()
-{
-    int value, option, front_element;
+int value, option, front_element;
+```
 
-    /* Create an empty queue */
-    front = back = NULL;
+```c
+/* Create an empty queue */
+   front = back = NULL;
+```
 
-    do
-    {
-        system(" cls ");
-        printf("\n Choose Operations for Queue from below: \n");
-        printf("\n 1 : Push Element");
-        printf("\n 2 : Pop Element");
-        printf("\n 3 : Top Element");
-        printf("\n 4 : Empty Check");
-        printf("\n 5 : Display Queue");
-        printf("\n 6 : Queue Size");
-        printf("\n 7 : Exit Program");
-
-        printf("\n");
-
-        printf("\n Enter choice : ");
-        scanf("%d", &option);
-
-        if( option == 1)
-        {
-            printf(" Enter Queue Element : ");
-            scanf("%d", &value);
-
-            push(value);
-            printf("\n %d Data inserted in Queue.\n",value);
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if(option == 2)
-        {
-            pop();
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if (option == 3)
-        {
-            front_element = top();
-
-            if (front_element != 0)
-            {
-                printf(" Top element : %d", front_element);
-            }
-            else
-            {
-                printf("\n No Top element in Queue as Queue is Empty");
-            }
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if (option == 4)
-        {
-            empty();
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if(option == 5)
-        {
-            display_queue();
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if( option == 6)
-        {
-            queue_size();
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-        else if (option == 7)
-        {
-            exit(0);
-        }
-        else
-        {
-            printf("\n Wrong choice, Please Enter Correct Choice Between '1 to 7'..");
-
-            getchar();
-            printf("\n\n Press 'Enter' to Continue the program...\n");
-            getchar();
-        }
-    }
-    while(option != 7);
-}
-
+```c
 /* Function to Display if the Queue is Empty or Not */
 void empty()
 {
@@ -129,13 +33,17 @@ void empty()
         printf("\n Queue is not empty");
     }
 }
+'''
 
+```c
 /* Function to Return Queue Size */
 void queue_size()
 {
     printf("\n Queue size : %d", count);
 }
+```
 
+```c
 /* Function to Insert or Push Elements in the Queue */
 void push(int data)
 {
@@ -156,7 +64,9 @@ void push(int data)
     }
     count++;
 }
+```
 
+```c
 /* Function to Display the Queue Elements */
 void display_queue()
 {
@@ -177,7 +87,9 @@ void display_queue()
         printf(" %d", first->value);
     }
 }
+'''
 
+```c
 /* Function to Delete Value from the Queue */
 void pop()
 {
@@ -209,7 +121,9 @@ void pop()
     printf("\n\n Press 'Enter' to Continue the program...\n");
     getchar();
 }
+```
 
+```c
 /* Function to Return the First or Top Element of Queue */
 int top()
 {
@@ -226,4 +140,4 @@ int top()
     printf("\n\n Press 'Enter' to Continue the program...\n");
     getchar();
 }
-
+```
