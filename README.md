@@ -90,7 +90,7 @@ This is a repository for my data structure laboratory course (course code - CSE 
 
 ## [Lab Assignment 10](lab10)
 * Designing a Queue Data Structure using Linked List:
-Here used functions list is given below:-
+  * Here used functions list is given below:-
     * Push
     * Pop
     * Top
