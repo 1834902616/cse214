@@ -1,4 +1,4 @@
-<h1 align="center">*** Design A Queue Data Structure ***<\h1 align="center">
+<h1 align="center">*** Design A Queue Data Structure ***</h1>
 
 ## [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
 ## Structure For A Queue:
