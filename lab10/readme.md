@@ -1,4 +1,4 @@
-  #        Design A Queue Data Structure
+# Design A Queue Data Structure
 ## [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
 ## Structure For A Queue:
 ```c
