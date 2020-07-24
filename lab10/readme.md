@@ -1,8 +1,8 @@
 <h1 align="center">*** Design A Queue Data Structure ***</h1>
 
-#### [CLICK HERE For C File](../lab10/update.c)
+#### [CLICK HERE For C File](../lab10/update_queue.c)
 
-#### [CLICK HERE For Header File](../lab10/queue_header.h)
+#### [CLICK HERE For Header File](../lab10/update_queue_header_file.h)
 
 ## [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
 ## Structure For A Queue:
