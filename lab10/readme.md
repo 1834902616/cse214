@@ -27,8 +27,8 @@ A real-life scenario in the form of example for queue will be the queue of peopl
 Which is exactly how queue system works in real world. If someone go to a ticket counter to buy movie tickets, and are first in the queue, then he/she will be the first one to get the tickets.
    * Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive. First come first served.
 
-## Function Implementations:
-## Structure For A Queue:
+## Program Description & Function Implementations:
+### Structure For A Queue:
 ```c
 typedef struct Node node;
    struct Node   // a node named structure create
@@ -37,96 +37,96 @@ typedef struct Node node;
     struct Node *next;  //next node address declare
 };
 ```
-## Used pointers & variables For Queue:
+### Used pointers & variables For Queue:
 ```c
 node *head,*new_head,*temp,*new_node;
 int count = 0;
 
 int value, option;
 ```
-## Empty:
+### Empty:
 ```c
 /* Function to Display if the Queue is Empty or Not */
 void empty(node *temp)
 {
-    if ((temp == NULL))
+    if ((temp == NULL)) //if there is no element in Queue
     {
-        printf("\n\t\t*** Queue is empty.***");
+        printf("\n\t\t*** Queue is empty.***");  //then print empty  
     }
     else
     {
-        printf("\n\t\t*** Queue is not empty.***");
+        printf("\n\t\t*** Queue is not empty.***"); // or not
     }
 }
 ```
-## Queue Size:
+### Queue Size:
 ```c
 /* Function to Return Queue Size */
 void queue_size(node *temp)
 {
     int count = 0;
-    while (temp != NULL)
+    while (temp != NULL)  // if queue is not empty
     {
-        temp = temp->next;
-        count++;
+        temp = temp->next;  //traverse queue elements
+        count++;        //& count elements
     }
-    printf("\n\t\t*** Queue size is: %d ***", count);
+    printf("\n\t\t*** Queue size is: %d ***", count);  //print result
 }
 ```
 
-## Push:
+### Push:
 ```c
 /* Function to Insert or Push Elements in the Queue */
 node* push(node *temp, int value)
 {
     node *head = temp, *new_node;
-    if (temp == NULL)
+    if (temp == NULL) //if queue is empty
     {
         node *new_head;
-        new_head = (node*) malloc(sizeof (node) );
-        new_head->value = value;
-        new_head->next = NULL;
+        new_head = (node*) malloc(sizeof (node) ); //create a node
+        new_head->value = value; //insert the value
+        new_head->next = NULL; //assign null to the next address
         return new_head;
     }
-    while(temp->next)
-        temp = temp->next;
-    new_node = (node*) malloc(sizeof (node) );
-    new_node->value = value;
-    new_node->next = NULL;
-    temp->next = new_node;
+    while(temp->next)  //if there  is element
+        temp = temp->next;  //hold the value in variable
+    new_node = (node*) malloc(sizeof (node) ); //create place for inserted element
+    new_node->value = value;  //put value 
+    new_node->next = NULL; //assign null to next address of it
+    temp->next = new_node; //pass the address to the previously holding variable
     return head;
 }
 ```
 
-## Display or Print Queue Elements:
+### Display or Print Queue Elements:
 ```c
 /* Function to Display the Queue Elements */
 void display_queue()
 void display_queue(node *temp)
 {
-    if (temp == NULL)
+    if (temp == NULL)   //if there is  no element
     {
         printf("\t\t*** Queue is empty ***");
         return;
     }
-    while (temp != NULL)
+    while (temp != NULL) //if there is element
     {
-        printf("\t%d", temp->value);
-        temp = temp->next;
+        printf("\t%d", temp->value); //print value 
+        temp = temp->next; 
     }
 }
 ```
 
-## Pop:
+### Pop:
 ```c
 /* Function to Pop Value from the Queue */
 node* pop(node *temp)
 {
-    if(temp != NULL)
+    if(temp != NULL) //if queue is not empty
     {
-        node *new_head = temp->next;
-        printf("\n\t\t*** Deleted value : %d ***", temp->value);
-        free(temp);
+        node *new_head = temp->next; //assign the address to a helping node
+        printf("\n\t\t*** Deleted value : %d ***", temp->value); //print deleted value
+        free(temp); //free the deleted space
         return new_head;
     }
     printf("\n\t\t*** No Elements Left, Empty Queue ***");
@@ -134,14 +134,14 @@ node* pop(node *temp)
 }
 ```
 
-## Top:
+### Top:
 ```c
 /* Function to Return the First or Top Element of Queue */
 void top(node *temp)
 {
-    if(temp != NULL)
+    if(temp != NULL) //if queue is not empty
     {
-        printf("\n\t\t*** Top element : %d ***", temp->value);
+        printf("\n\t\t*** Top element : %d ***", temp->value); //print first value
     }
     else
     {
