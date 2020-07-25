@@ -4,7 +4,32 @@
 
 #### [CLICK HERE For Header File](../lab10/update_queue_header_file.h)
 
-## [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
+### [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
+
+## Introduction :
+A queue is an example of a linear data structure or more abstractly a sequential collection which allows the first element to be inserted in the queue will be the first element to be deleted or removed from the queue.<br>This makes queue as FIFO (First in First Out) data structure, which means that element inserted first will be removed first.
+We can perform many Operations in Queue using Given Functions:
+   * <b>Display:</b> Show the queue like how it is & also Check if the queue is empty here as well.
+   * <b>Empty:</b> Tests to see whether the queue is empty or not and display the result.
+   * <b>Size:</b> Count the Queue elements & Returns the number of elements in the queue.
+   * <b>Top:</b> In Queue, after pop operation Top is the element which can be removed first from the queue as queue is the FIFO (First in First Out) data structure. So this function gets the first element from the displayed queue which is removable.
+   * <b>Push:</b> Add/Insert a new element to the rear/back/end of the queue. This Function needs the element and returns nothing.
+   * <b>Pop:</b> Removes the front element from the queue and returns the removed element. Then the queue is modified after deletion.
+
+## Uses Of Queue:
+Queue, as the name suggests is used whenever we need to manage any group of objects in an order in which the first one coming in, also gets out first while the others wait for their turn, like in the following scenarios:
+   * Queues provide services in computer science, transport, and operations research where various entities such as data, objects, persons, or events are stored and held to be processed later. In these contexts, the queue performs the function of a buffer. 
+   * Within a computer system where the queue of tasks arranged in the list to Serving requests on a single shared resource, like a printer.
+   * Queue is also used for accessing the disk storage and even for CPU task scheduling in computer system.
+So basically queue is used within a single program where there are multiple programs kept in the queue or one task may create other tasks which must have to be executed in turn by keeping them in the queue.
+   * Another usage of queues is in the implementation of breadth-first search.
+
+A real-life scenario in the form of example for queue will be the queue of people waiting to accomplish a particular task where the first person in the queue is the first person to be served first.
+   * In real life scenario, Call Center phone systems uses Queues to hold people calling them in an order, until a service representative is free.
+Which is exactly how queue system works in real world. If someone go to a ticket counter to buy movie tickets, and are first in the queue, then he/she will be the first one to get the tickets.
+   * Handling of interrupts in real-time systems. The interrupts are handled in the same order as they arrive. First come first served.
+
+## Function Implementations:
 ## Structure For A Queue:
 ```c
 typedef struct Node node;
@@ -16,62 +41,62 @@ typedef struct Node node;
 ```
 ## Used pointers & variables For Queue:
 ```c
-node *front,*back,*temp,*first;
+node *head,*new_head,*temp,*new_node;
 int count = 0;
 
-int value, option, front_element;
+int value, option;
 ```
-## Create An Empty Queue:
-```c
-/* Create an empty queue */
-   front = back = NULL;
-```
-
-## Check Queue is Empty Or Not:
+## Empty:
 ```c
 /* Function to Display if the Queue is Empty or Not */
-void empty()
+void empty(node *temp)
 {
-    if ((front == NULL) && (back == NULL)) //If both first & last element of queue is equal to Null.
+    if ((temp == NULL))
     {
-        printf("\n Queue is empty");
+        printf("\n\t\t*** Queue is empty.***");
     }
     else
     {
-        printf("\n Queue is not empty");
+        printf("\n\t\t*** Queue is not empty.***");
     }
 }
 ```
-## Finding Queue Size:
+## Queue Size:
 ```c
 /* Function to Return Queue Size */
-void queue_size()
+void queue_size(node *temp)
 {
-    printf("\n Queue size : %d", count);
+    int count = 0;
+    while (temp != NULL)
+    {
+        temp = temp->next;
+        count++;
+    }
+    printf("\n\t\t*** Queue size is: %d ***", count);
 }
 ```
 
-## Push Or Elements Insertion in Queue:
+## Push:
 ```c
 /* Function to Insert or Push Elements in the Queue */
-void push(int data)
+node* push(node *temp, int value)
 {
-    if (back == NULL) 
+    node *head = temp, *new_node;
+    if (temp == NULL)
     {
-        back = (node*)malloc(sizeof(node));
-        back->next = NULL;
-        back->value = data;
-        front = back;
+        node *new_head;
+        new_head = (node*) malloc(sizeof (node) );
+        new_head->value = value;
+        new_head->next = NULL;
+        return new_head;
     }
-    else
-    {
-        temp = (node*)malloc(sizeof(node));
-        back->next = temp;
-        temp->value = data;
-        temp->next = NULL;
-        back = temp;
-    }
-    count++;
+    while(temp->next)
+        temp = temp->next;
+    new_node = (node*) malloc(sizeof (node) );
+    new_node->value = value;
+    new_node->next = NULL;
+    temp->next = new_node;
+    return head;
 }
 ```
 
@@ -79,77 +104,50 @@ void push(int data)
 ```c
 /* Function to Display the Queue Elements */
 void display_queue()
+void display_queue(node *temp)
 {
-    first = front; //hold the front value in a  variable named first
-
-    if ((first == NULL) && (back == NULL)) //if there is no element in Queue
+    if (temp == NULL)
     {
-        printf("\n Queue is empty ");
+        printf("\t\t*** Queue is empty ***");
         return;
     }
-    while (first != back) //If there is morre than one element in queue
+    while (temp != NULL)
     {
-        printf(" %d ", first->value);
-        first = first->next;
-    }
-    if (first == back) // if there is one element only in queue
-    {
-        printf(" %d", first->value);
+        printf("\t%d", temp->value);
+        temp = temp->next;
     }
 }
 ```
 
-## Pop Or Element Deletion in Queue:
+## Pop:
 ```c
-/* Function to Delete Value from the Queue */
-void pop()
+/* Function to Pop Value from the Queue */
+node* pop(node *temp)
 {
-    first = front; //hold the front value in a  variable named first
-
-    if (first == NULL) //if there is no element in Queue
+    if(temp != NULL)
     {
-        printf("\n No Elements Left, Empty Queue");
-        return;
+        node *new_head = temp->next;
+        printf("\n\t\t*** Deleted value : %d ***", temp->value);
+        free(temp);
+        return new_head;
     }
-    else if (first->next != NULL) //if there is more than one element in Queue
-    {
-        first = first->next;
-        printf("\n Deleted value : %d", front->value);
-        free(front);
-        front = first;
-    }
-    else
-    {
-        printf("\n Deleted value : %d", front->value);
-        free(front);
-        front = NULL;
-        back = NULL;
-    }
-    count--;
+    printf("\n\t\t*** No Elements Left, Empty Queue ***");
+    return temp;
 }
 ```
 
-## Find Top Element of Queue:
+## Top:
 ```c
 /* Function to Return the First or Top Element of Queue */
-int top()
+void top(node *temp)
 {
-    if ((front != NULL) && (back != NULL))
+    if(temp != NULL)
     {
-        return(front->value);
+        printf("\n\t\t*** Top element : %d ***", temp->value);
     }
     else
     {
-        return 0;
-    } 
-    front_element = top();
-    if (front_element != 0)
-            {
-                printf(" Top element : %d", front_element);
-            }
-            else
-            {
-                printf("\n No Top element in Queue as Queue is Empty");
-            }
+        printf("\n\t\t*** No Top element in Queue, as Queue is Empty ***");
+    }
 }
 ```
