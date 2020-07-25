@@ -4,8 +4,6 @@
 
 #### [CLICK HERE For Header File](../lab10/update_queue_header_file.h)
 
-### [Implementation of Queue Data Structure Using Linked List](../lab10/1.c)
-
 ## Introduction :
 A queue is an example of a linear data structure or more abstractly a sequential collection which allows the first element to be inserted in the queue will be the first element to be deleted or removed from the queue.<br>This makes queue as FIFO (First in First Out) data structure, which means that element inserted first will be removed first.
 We can perform many Operations in Queue using Given Functions:
